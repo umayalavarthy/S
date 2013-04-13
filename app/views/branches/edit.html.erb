@@ -1,0 +1,5 @@
+<%- model_class = Branch -%>
+<div class="page-header-mine">
+  <h3><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => model_class.model_name.human %></h3>
+</div>
+<%= render :partial => 'form' %>

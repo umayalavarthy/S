@@ -1,0 +1,26 @@
+<%= form_for @subject, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :name, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :course_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.collection_select :course_id, Course.order("name ASC"), :id, :name, {:prompt => 'Select Course'}, :class => 'number_field', :onchange => "get_course_branches(this.value)" %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :branch_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= select_tag :branch_id, options_for_select([["Select",""]]), :id => "course_branches" %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+      subjects_path, :class => 'btn' %>
+  </div>
+<% end %>

@@ -1,0 +1,5 @@
+<%- model_class = Exam -%>
+<div class="page-header-mine">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => model_class.model_name.human %></h1>
+</div>
+<%= render :partial => 'form' %>

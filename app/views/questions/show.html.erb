@@ -1,0 +1,31 @@
+<%- model_class = Question -%>
+<div class="page-header-mine">
+  <h3><%=t '.title', :default => model_class.model_name.human %></h3>
+</div>
+
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:question) %>:</strong></dt>
+  <dd><%= @question.question %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:correct_answer) %>:</strong></dt>
+  <dd><%= @question.correct_answer %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:incorrect_answer_1) %>:</strong></dt>
+  <dd><%= @question.incorrect_answer_1 %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:incorrect_answer_2) %>:</strong></dt>
+  <dd><%= @question.incorrect_answer_2 %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:incorrect_answer_3) %>:</strong></dt>
+  <dd><%= @question.incorrect_answer_3 %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:exam_id) %>:</strong></dt>
+  <dd><%= @question.exam.name %></dd>
+</dl>
+
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              questions_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_question_path(@question), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              question_path(@question),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>
