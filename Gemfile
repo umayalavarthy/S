@@ -5,7 +5,7 @@ gem 'rails', '3.2.12'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+#gem 'mysql2'
 gem 'execjs'
 gem 'therubyracer'
 gem 'devise'
@@ -22,6 +22,19 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
 end
+
+
+
+gem 'pg'
+
+
+platforms :jruby do
+  gem 'trinidad'
+  gem 'jruby-openssl'
+end
+
+gem 'thin'
+
 gem 'less-rails'
 gem 'jquery-rails'
 
