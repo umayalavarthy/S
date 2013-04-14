@@ -18,15 +18,17 @@
           </a>
           <a class="brand" href="#">Sai Medha</a>
           <div class="nav-collapse">
-            <ul class="nav">
-              <li><%= link_to "home", root_path %>
-              <li><%= link_to 'Courses', courses_path %></li>
-              <li><%= link_to 'Branches', branches_path %></li>
-              <li><%= link_to 'Subjects', subjects_path %></li>
-              <li><%= link_to 'Exams', exams_path %>
-              <li><%= link_to 'Questions', questions_path %></li>
-              <li><%= link_to "Logout",destroy_user_session_path, :method => :delete %></li>
-            </ul>
+            <% if user_signed_in? %>
+              <ul class="nav">
+                <li><%= link_to "home", root_path %>
+                <li><%= link_to 'Courses', courses_path %></li>
+                <li><%= link_to 'Branches', branches_path %></li>
+                <li><%= link_to 'Subjects', subjects_path %></li>
+                <li><%= link_to 'Exams', exams_path %>
+                <li><%= link_to 'Questions', questions_path %></li>
+                <li><%= link_to "Logout",destroy_user_session_path, :method => :delete %></li>
+              </ul>
+            <% end %>
           </div>
         </div>
       </div>
@@ -37,13 +39,13 @@
         <div class="span9" style="width :100%"><%= yield %></div>
         <div class="span3">
           <h2></h2>
-          
+
         </div>
       </div>
     </div>
 
 
-    <%#= yield %>
+<%#= yield %>
 
   </body>
 </html>
