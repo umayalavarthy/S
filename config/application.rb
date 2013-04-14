@@ -53,6 +53,10 @@ module SaiMedha
     # parameters by using an attr_accessible or attr_protected declaration.
     config.active_record.whitelist_attributes = true
     config.assets.initialize_on_precompile = false
+<<<<<<< HEAD
+=======
+
+>>>>>>> 549d0825ce375a4a808d930982c95092818d55d0
     # Enable the asset pipeline
     config.assets.enabled = true
 
