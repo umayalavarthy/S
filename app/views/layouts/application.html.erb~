@@ -18,7 +18,7 @@
           </a>
           <a class="brand" href="#">Sai Medha</a>
           <div class="nav-collapse">
-            <% if user_signed_in? %>
+            <%# if user_signed_in? %>
               <ul class="nav">
                 <li><%= link_to "home", root_path %>
                 <li><%= link_to 'Courses', courses_path %></li>
@@ -28,7 +28,7 @@
                 <li><%= link_to 'Questions', questions_path %></li>
                 <li><%= link_to "Logout",destroy_user_session_path, :method => :delete %></li>
               </ul>
-            <% end %>
+            <%# end %>
           </div>
         </div>
       </div>

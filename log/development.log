@@ -72326,3 +72326,224 @@ Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
 Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/subjects" for 127.0.0.1 at 2013-04-16 19:48:30 +0530
+Processing by SubjectsController#index as HTML
+Completed 401 Unauthorized in 18ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2013-04-16 19:48:30 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/_links.erb (2.0ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (11.3ms)
+Compiled bootstrap_and_overrides.css  (538ms)  (pid 3587)
+Compiled branches.css  (28ms)  (pid 3587)
+Compiled courses.css  (0ms)  (pid 3587)
+Compiled exams.css  (1ms)  (pid 3587)
+Compiled home.css  (1ms)  (pid 3587)
+Compiled questions.css  (0ms)  (pid 3587)
+Compiled scaffolds.css  (6ms)  (pid 3587)
+Compiled subjects.css  (0ms)  (pid 3587)
+Compiled users.css  (0ms)  (pid 3587)
+Compiled application.css  (702ms)  (pid 3587)
+Compiled jquery.js  (5ms)  (pid 3587)
+Compiled jquery_ujs.js  (0ms)  (pid 3587)
+Compiled twitter/bootstrap/bootstrap-transition.js  (0ms)  (pid 3587)
+Compiled twitter/bootstrap/bootstrap-alert.js  (0ms)  (pid 3587)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 3587)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (0ms)  (pid 3587)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 3587)
+Compiled twitter/bootstrap/bootstrap-tab.js  (0ms)  (pid 3587)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 3587)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 3587)
+Compiled twitter/bootstrap/bootstrap-button.js  (0ms)  (pid 3587)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 3587)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (0ms)  (pid 3587)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (0ms)  (pid 3587)
+Compiled twitter/bootstrap/bootstrap-affix.js  (0ms)  (pid 3587)
+Compiled twitter/bootstrap.js  (182ms)  (pid 3587)
+Compiled bootstrap.js  (102ms)  (pid 3587)
+Compiled branches.js  (3ms)  (pid 3587)
+Compiled courses.js  (0ms)  (pid 3587)
+Compiled exams.js  (0ms)  (pid 3587)
+Compiled home.js  (0ms)  (pid 3587)
+Compiled questions.js  (0ms)  (pid 3587)
+Compiled subjects.js  (0ms)  (pid 3587)
+Compiled users.js  (0ms)  (pid 3587)
+Compiled application.js  (516ms)  (pid 3587)
+Completed 200 OK in 1876ms (Views: 1778.2ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /bootstrap_and_overrides.css - 200 OK (1ms)
+
+
+Started GET "/assets/branches.css?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /branches.css - 200 OK (2ms)
+
+
+Started GET "/assets/courses.css?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /courses.css - 200 OK (1ms)
+
+
+Started GET "/assets/exams.css?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /exams.css - 200 OK (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /home.css - 200 OK (1ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /questions.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/subjects.css?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /subjects.css - 200 OK (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:32 +0530
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:33 +0530
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:33 +0530
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:33 +0530
+Served asset /twitter/bootstrap.js - 200 OK (15ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:33 +0530
+Served asset /twitter/bootstrap/bootstrap-affix.js - 200 OK (2ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:33 +0530
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/branches.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:33 +0530
+Served asset /branches.js - 200 OK (2ms)
+
+
+Started GET "/assets/courses.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:33 +0530
+Served asset /courses.js - 200 OK (1ms)
+
+
+Started GET "/assets/exams.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:33 +0530
+Served asset /exams.js - 200 OK (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:33 +0530
+Served asset /home.js - 200 OK (1ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:33 +0530
+Served asset /questions.js - 200 OK (1ms)
+
+
+Started GET "/assets/subjects.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:33 +0530
+Served asset /subjects.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2013-04-16 19:48:33 +0530
+Served asset /users.js - 200 OK (1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2013-04-16 19:48:35 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kH+hBsq+3VLWk/0PdChruKWUfatqrdLqKUat5go1BA4=", "user"=>{"email"=>"uma@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'uma@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (26.2ms)[0m  [1mUPDATE `users` SET `last_sign_in_at` = '2013-04-14 06:23:41', `current_sign_in_at` = '2013-04-16 14:18:35', `sign_in_count` = 9, `updated_at` = '2013-04-16 14:18:35' WHERE `users`.`id` = 3[0m
+  [1m[35m (34.5ms)[0m  COMMIT
+Redirected to http://localhost:3000/subjects
+Completed 302 Found in 336ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/subjects" for 127.0.0.1 at 2013-04-16 19:48:36 +0530
+Processing by SubjectsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  [1m[35mSubject Load (0.2ms)[0m  SELECT `subjects`.* FROM `subjects` 
+  [1m[36mBranch Load (0.4ms)[0m  [1mSELECT `branches`.* FROM `branches` WHERE `branches`.`id` = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.4ms)[0m  SELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `branches`.* FROM `branches` WHERE `branches`.`id` = 1 LIMIT 1[0m
+  [1m[35mCourse Load (0.5ms)[0m  SELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 1 LIMIT 1
+  [1m[36mBranch Load (0.4ms)[0m  [1mSELECT `branches`.* FROM `branches` WHERE `branches`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 2 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `branches`.* FROM `branches` WHERE `branches`.`id` = 3 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 2 LIMIT 1
+  [1m[36mBranch Load (0.4ms)[0m  [1mSELECT `branches`.* FROM `branches` WHERE `branches`.`id` = 4 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 1 LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT `branches`.* FROM `branches` WHERE `branches`.`id` = 1 LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT `courses`.* FROM `courses` WHERE `courses`.`id` = 1 LIMIT 1
+  Rendered subjects/index.html.erb within layouts/application (107.0ms)
+Completed 200 OK in 169ms (Views: 143.2ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-04-16 19:48:38 +0530
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT `users`.* FROM `users` WHERE `users`.`id` = 3 LIMIT 1[0m
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 56ms (Views: 53.2ms | ActiveRecord: 0.2ms)
