@@ -6,9 +6,9 @@ SaiMedha::Application.initialize!
 
 
 
-SlamApp::Application.configure do
+SaiMedha::Application.configure do
 	#devise
-config.action_mailer.default_url_options = { :host => 'connect-friends.herokuapp.com' }
+config.action_mailer.default_url_options = { :host => 'http://infinite-headland-5015.herokuapp.com' }
 #action mailer
 config.action_mailer.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
