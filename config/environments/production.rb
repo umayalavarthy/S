@@ -62,8 +62,6 @@ SaiMedha::Application.configure do
   config.active_support.deprecation = :notify
 
 
-# Send deprecation notices to registered listeners
-  config.active_support.deprecation = :notify
   #devise
   config.action_mailer.default_url_options = { :host => 'yourapp.heroku.com' }
 
