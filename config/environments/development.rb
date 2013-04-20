@@ -31,7 +31,24 @@ SaiMedha::Application.configure do
 
   # Do not compress assets
   config.assets.compress = false
-  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+ # config.action_mailer.default_url_options = { :host => 'localhost:3000' }
   # Expands the lines which load the assets
   config.assets.debug = true
+
+
+config.action_mailer.default_url_options = { :host => 'http://infinite-headland-5015.herokuapp.com' }
+
+
+  config.action_mailer.delivery_method = :smtp
+
+ config.action_mailer.smtp_settings = {
+   :enable_starttls_auto  => true,
+   :address => 'localhost',
+   :port => 587,
+   :tls => true,
+   :domain => 'google.com', #you can also use google.com
+   :authentication => :login,
+   :user_name => 'rakerails@gmail.com',
+   :password => 'herokurails'
+  }
 end
