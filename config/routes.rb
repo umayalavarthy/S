@@ -8,7 +8,13 @@ SaiMedha::Application.routes.draw do
 
   resources :subjects 
   resources :exams
-  
+
+  resources :home do
+    get :location, :on => :collection
+    get :programmes_offered, :on => :collection
+    get :notifications, :on => :collection
+    get :features, :on => :collection
+  end
   
   resources :branches
 

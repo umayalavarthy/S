@@ -16,17 +16,26 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Sai Medha</a>
+          <a class="brand"><%= image_tag "saimedha.jpg", :width =>'50px'%></a>
           <div class="nav-collapse">
             <% if user_signed_in? %>
               <ul class="nav">
                 <li><%= link_to "home", root_path %>
+                
+                <% if current_user.user_type == 507 %>
                 <li><%= link_to 'Courses', courses_path %></li>
                 <li><%= link_to 'Branches', branches_path %></li>
                 <li><%= link_to 'Subjects', subjects_path %></li>
                 <li><%= link_to 'Exams', exams_path %>
                 <li><%= link_to 'Questions', questions_path %></li>
+                <% else %>
+                  <li><%= link_to 'Programmes Offered', programmes_offered_home_index_path %></li>
+                  <li><%= link_to 'Salient Features', features_home_index_path %></li>
+                <li><%= link_to 'Notifications', notifications_home_index_path %></li>
+                <li><%= link_to 'Contact Us', location_home_index_path %></li>
+                <% end %> 
                 <li><%= link_to "Logout",destroy_user_session_path, :method => :delete %></li>
+                
               </ul>
             <% end %>
           </div>
