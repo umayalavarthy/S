@@ -5,6 +5,14 @@
       <%= f.text_area :question, :class => 'text_area', :rows => 5 %>
     </div>
   </div>
+
+<div class="control-group">
+    <%= f.label :question, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.file_field :qavatar %>
+    </div>
+  </div>
+
   <div class="control-group">
     <%= f.label :correct_answer, :class => 'control-label' %>
     <div class="controls">
