@@ -9,7 +9,7 @@ gem 'rails', '3.2.12'
 gem 'execjs'
 gem 'therubyracer'
 gem 'devise'
-#gem 'selections'
+gem 'selections'
 
 # Gems used only for assets and not required
 # in production environments by default.
