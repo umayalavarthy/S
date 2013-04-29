@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-  
+  skip_before_filter :authenticate_user!, :except => [:materials]
   def index
     
   end
@@ -17,6 +17,14 @@ class HomeController < ApplicationController
   end
 
   def features
+
+  end
+
+  def aboutus
+
+  end
+
+  def materials
 
   end
 

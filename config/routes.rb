@@ -14,6 +14,8 @@ SaiMedha::Application.routes.draw do
     get :programmes_offered, :on => :collection
     get :notifications, :on => :collection
     get :features, :on => :collection
+    get :aboutus, :on => :collection
+    get :materials, :on => :collection
   end
   
   resources :branches

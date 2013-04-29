@@ -1,0 +1,246 @@
+
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+.main_wrapper {
+	width:100%;
+	height:auto;
+}
+.header_wrapper {
+	width:1024px;
+	height:auto;
+	margin:auto;
+}
+.logo_social {
+	float:left;
+	width:1024px;
+}
+.logo {
+	float:left;
+	width: 20%;
+}
+.social_network {
+	float:right;
+	width: 15%;
+}
+.social_network ul {
+	float:left;
+	margin-top:10px;
+}
+.social_network li {
+	float:left;
+	padding-right:15px;
+}
+.coaching_center {
+	float:left;
+	width:1024px;
+	margin-bottom:15px;
+}
+.coaching_center_inner {
+	width:1024px;
+	float:left;
+	height:80px;
+	background-color:#bfbfbf;
+}
+.coaching_center_inner ul {
+	float:left;
+	margin-top:18px;
+	margin-left:25px;
+}
+.coaching_center_inner li {
+	float:left;
+	margin-right:37px;
+}
+.coaching_center_inner li a {
+	float:left;
+	padding:15px 20px;
+	background-color:#ee812c;
+	color:#ffffff;
+	text-decoration:none;
+}
+.coaching_center_inner li a:hover {
+	color:#ffffff;
+	text-decoration:underline;
+	background-color:#4379b7;
+}
+.menubar_wrapper {
+	width:100%;
+	height:60px;
+	float:left;
+	background: #1e72d2; /* Old browsers */
+	background: -moz-linear-gradient(top, #1e72d2 1%, #186cc4 27%, #1063af 59%, #09599e 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #1e72d2), color-stop(27%, #186cc4), color-stop(59%, #1063af), color-stop(100%, #09599e)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #1e72d2 1%, #186cc4 27%, #1063af 59%, #09599e 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #1e72d2 1%, #186cc4 27%, #1063af 59%, #09599e 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #1e72d2 1%, #186cc4 27%, #1063af 59%, #09599e 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #1e72d2 1%, #186cc4 27%, #1063af 59%, #09599e 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e72d2', endColorstr='#09599e', GradientType=0 ); /* IE6-9 */
+}
+.menubar_links {
+	margin:auto;
+	width:1024px;
+}
+.menubar_links ul {
+	float:left;
+	margin-top:15px;
+	margin-left:40px;
+}
+.menubar_links li {
+	padding-right:35px;
+	float:left;
+}
+.menubar_links li a {
+	color:#ffffff;
+	text-decoration:none;
+}
+.menubar_links li a:hover {
+	color:#F03;
+}
+.bottom_wrapper {
+	width:1024px;
+	height:auto;
+	margin:auto;
+}
+.Banner_slide {
+	width:1024px;
+	height:268px;
+	float:left;
+	background-color:#FC6;
+	margin-top:15px;
+}
+.middle_desc {
+	float:left;
+	width:1024px;
+	margin:10px 0;
+}
+.topperslist
+{
+	float:left;
+	width:260px;
+}
+.testimonials{
+	float:left;
+	width:260px;
+	margin-left:25px;
+}
+
+.middle_desc_left {
+	float:left;
+	width:450px;
+	margin:10px 0;
+	margin-left:25px;
+}
+.middle_desc_left h2 {
+	float:left;
+	color:#F30;
+	width:100%;
+	font-size:18px;
+	font-weight:bold;
+}
+.middle_desc_left p {
+	float:left;
+	text-align:justify;
+	padding-top:5px;
+	color:#444444;
+}
+.AchiversDetails {
+	width:1024px;
+	height:170px;
+	float:left;
+	background-color:#665e5e;
+	border:1px solid #373131;
+}
+.AchiversDetails marquee {
+	margin-top:15px;
+}
+.footer_wrapper {
+	width:100%;
+	height:auto;
+	background-color:#000;
+	float:left;
+}
+.footer_inner {
+	width:1024px;
+	height:auto;
+	margin:auto;
+}
+.fot_links {
+	width:200px;
+	height:auto;
+	float:left;
+	margin-top:30px;
+}
+.fot_links h2 {
+	color:#ffffff;
+}
+.fot_links ul {
+	float:left;
+	margin-left:15px;
+	margin-top:10px;
+}
+.fot_links li {
+	list-style-image:url(../images/links_arrow.png);
+	color:#787a7f;
+	padding-bottom:8px;
+}
+.fot_links li a {
+	color:#787a7f;
+	text-decoration:none;
+}
+.fot_links li a:hover {
+	color:#F03;
+	text-decoration:underline;
+}
+.copyrights {
+	float:left;
+	width:1024px;
+	margin-top:25px;
+	margin-bottom:20px;
+}
+.copyrights p {
+	text-align:center;
+	color:#ffffff;
+}
+
+.header-in {
+font-family: Arial, Verdana, Helvetica, sans-serif;
+margin-top:35px;
+font-size: 35px;
+color: #fff;
+background-color :#F03;
+padding-top: 50px;
+width: 56%;
+height: 60px;
+}
+.heading-uma {
+	height: 60px;
+}

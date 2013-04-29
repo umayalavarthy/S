@@ -1,14 +1,22 @@
-<div class="page-header-mine">
 
-<h3>Programmes Offered @ Sai Medha Academy</h3>
-<h4>Classroom Coaching</h4>
+<h2>Programmes Offered @ Sai Medha Academy</h2>
+<br/><br/><br/>
+<h2>Classroom Coaching</h2>
+
+
+ <br/> <br/>
+            
   <% @courses.each do |c|%>
-  <h6>******<%= c.name %>******</h6>
+
+  #<%= c.name %>- 2013
+ 
 	<% @bs = c.branches %>
 	(
 	<% @bs.each do |b| %>
-		<%= b.name%>.
+		<%= b.name%>
 	<% end %>)
+  <br/><br/>
   <% end %>
-<h4>Online Coaching</h4>
-</div>
+
+ 
+<h2>Online Coaching</h2>
