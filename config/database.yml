@@ -36,4 +36,6 @@ development:
  encoding: unicode
  database: sacademy
  pool: 5
- username: USER
+ username: postgres
+ password: postgres
+ host: localhost
