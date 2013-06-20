@@ -33,7 +33,7 @@ table {
 }
 .main_wrapper {
 	width:100%;
-	height:auto;
+	height:700px;
 }
 .header_wrapper {
 	width:1024px;
@@ -155,9 +155,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e72d2', end
 
 .middle_desc_left {
 	float:left;
-	width:450px;
-	margin:10px 0;
-	margin-left:25px;
+	width:725px;
+    margin: 51px 0px 33px 23px;
 }
 .middle_desc_left h2 {
 	float:left;
@@ -171,6 +170,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e72d2', end
 	text-align:justify;
 	padding-top:5px;
 	color:#444444;
+  line-height:150%;
 }
 .AchiversDetails {
 	width:1024px;
@@ -178,9 +178,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e72d2', end
 	float:left;
 	background-color:#665e5e;
 	border:1px solid #373131;
+  margin-left: 1%;
 }
 .AchiversDetails marquee {
 	margin-top:15px;
+
 }
 .footer_wrapper {
 	width:100%;

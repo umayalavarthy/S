@@ -42,9 +42,6 @@
       <div class="menubar_links">
           <ul>
 
-
-
-
             <% if user_signed_in? %>
                 <li><%= link_to "Home", root_path %>           
                 <% if current_user.user_type == 507 %>
@@ -74,31 +71,20 @@
         </div>
     </div>
     <div class="bottom_wrapper">
-      <div class="Banner_slide">
-          <%=image_tag "banner1.jpg" %>
-        </div>
-        <div class="middle_desc">
-            <div class="topperslist">
-              <%= image_tag "toppers.jpg" %>
-            </div>
-          <div class="middle_desc_left">
+
 
     <%= yield %>
               
           </div>
-            <div class="testimonials">
+            <!--<div class="testimonials">
 
 <iframe width="193" height="144" src="https://www.youtube.com/watch?v=_XrrBAW75gc" frameborder="0" allowfullscreen=""></iframe>
 
               <img src="common/images/testimonials.jpg" />
-            </div>
+            </div> -->
             
         </div>
-      <div class="AchiversDetails">
-          <marquee>
-              <%= image_tag "acheivers.jpg" %>
-            </marquee>
-        </div>        
+
     </div>
     <div class="footer_wrapper">
       <div class="footer_inner">
