@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>SaiMedha</title>
+    <%= stylesheet_link_tag    "application", "saimedha", :media => "all" %>
+    <%= javascript_include_tag 'jquery', 'application' %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+
+    <div class="main_wrapper">
+  <div class="header_wrapper">
+      <div class="logo_social">
+        <div class = "heading-uma">
+          <div class="logo">
+                <%= image_tag "saimedha.jpg"%>
+            </div>
+            <%= image_tag "logo2.png", :size=>'30x30'%>
+            
+            <div class="social_network">
+              <ul>
+                  <li><a href="#"><%= image_tag "facebook.jpg" %></a></li>
+                    <li><a href="#"><%= image_tag "in.jpg" %></a></li>
+                </ul>
+            </div>
+        </div>
+        </div>
+        <div class="coaching_center">
+          <div class="coaching_center_inner">
+              <ul>
+                  <li><a href="#">Hyderabad</a></li>
+                    <li><a href="#">Tirupathi</a></li>
+                    <li><a href="#">Vijayawada</a></li>
+                    <li><a href="#">Guntur</a></li>
+                    <li><a href="#">Kakinada</a></li>
+                    <li><a href="#">Anantapur</a></li>
+                    <li><a href="#">GATE 2K13</a></li>
+                </ul>
+          </div>
+        </div>
+    </div>
+    <div class="menubar_wrapper">
+      <div class="menubar_links">
+          <ul>
+
+            <% if user_signed_in? %>
+                <li><%= link_to "Home", root_path %>           
+                <% if current_user.user_type == 507 %>
+                <li><%= link_to 'Courses', courses_path %></li>
+                <li><%= link_to 'Branches', branches_path %></li>
+                <li><%= link_to 'Subjects', subjects_path %></li>
+                <li><%= link_to 'Exams', exams_path %>
+                <li><%= link_to 'Questions', questions_path %></li>
+                <% end %>
+            <% end %>
+             <% if !user_signed_in? %>
+                <li><%= link_to "home", root_path %>
+              <% end %>
+                <li><%= link_to 'About Us', aboutus_home_index_path %></li>
+                <li><%= link_to 'Programmes Offered', programmes_offered_home_index_path %></li>
+                <li><%= link_to 'Salient Features', features_home_index_path %></li>
+                <li><%= link_to 'Notifications', notifications_home_index_path %></li>
+                <li><%= link_to 'Contact Us', location_home_index_path %></li>
+             <% if user_signed_in? %>
+              <li><%= link_to "Logout",destroy_user_session_path, :method => :delete %></li>
+             <% end %>
+             <% if !user_signed_in? %>
+                <li><%= link_to "Sign In/Sign Up", '/users/sign_in' %>
+              <% end %>
+
+              </ul> 
+        </div>
+    </div>
+    <div class="bottom_wrapper">
+
+
+    <%= yield %>
+              
+          </div>
+            <!--<div class="testimonials">
+
+<iframe width="193" height="144" src="https://www.youtube.com/watch?v=_XrrBAW75gc" frameborder="0" allowfullscreen=""></iframe>
+
+              <img src="common/images/testimonials.jpg" />
+            </div> -->
+            
+        </div>
+
+    </div>
+    <div class="footer_wrapper">
+      <div class="footer_inner">
+          <div class="fot_links">
+              <h2>Coaching</h2>
+                <ul>
+                  
+                    <li><a href="#">Gate Coaching</a></li>
+                    
+                    <li><a href="#">Terms and Conditions</a></li>
+                    
+                </ul>
+            </div>
+            <div class="fot_links" style=" width: 120px;">
+              <h2>Centres</h2>
+                <ul>
+                    <li><a href="#">Hyderabad</a></li>
+                    <li><a href="#">Tirupathi</a></li>
+                    <li><a href="#">Vijayawada</a></li>
+                    <li><a href="#">Guntur</a></li>
+                    <li><a href="#">Kakinada</a></li>
+                    <li><a href="#">Anantapur</a></li>
+                </ul>
+            </div>
+            <div class="fot_links" style=" width: 250px;">
+              <h2>Test Series</h2>
+                <ul>
+                  <li><a href="#">GATE Online Test Series</a></li>
+                    <li><a href="#">GATE Class Room Test Series</a></li>
+                    <li><a href="#">IES Online Test Series</a></li>
+                    <li><a href="#">IES Class Room Test Series</a></li>
+                    <li><a href="#">Previous Question Papers</a></li>
+                    <li><a href="#">Free Online Test Serie</a></li>
+                </ul>
+            </div>
+            <div class="fot_links" style=" width: 220px;">
+              <h2>Resources</h2>
+                <ul>
+                  <li><a href="#">Why GATE Preparation</a></li>
+                    <li><a href="#">GATE Question papers</a></li>
+                    <li><a href="#">GATE 2013 Cutoff marks</a></li>
+                    <li><a href="#">MTech 2013 Counselling</a></li>
+                    <li><a href="#">GATE 2013 Toppers</a></li>
+                    <li><a href="#">IES 2013 Rankers</a></li>
+                </ul>
+            </div>
+            <div class="fot_links">
+              <h2>About US</h2>
+                <ul>
+                  <li><a href="#">Management</a></li>
+                    <li><a href="#">Faculty</a></li>
+                    <li><a href="#">Our Achievements</a></li>
+                    <li><a href="#">Contact Us</a></li>                 
+                </ul>
+            </div>
+            <div class="copyrights">
+              <p>Copyright SaiMedha © 2013,All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+</div><!--main_wrapper-->
+
+
+
+
+
+  </body>
+</html>

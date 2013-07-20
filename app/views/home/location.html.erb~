@@ -1,0 +1,21 @@
+
+<%#<h2 class='header-side'>Sai Medha	</h2>%>
+
+  <div class="list-location">
+
+
+ <ul>
+  <li><a href="#">HYDERABAD</a></li>
+<li><a href="#">TIRUPATHI</a></li>
+  <li><a href="#">VIJAYAWADA</a></li>
+  <li><a href="#">KAKINADA</a></li>
+
+<li><a href="#">GUNTUR</a></li>
+<li><a href="#">ANANTAPUR</a></li>
+</ul>
+
+</div>
+
+<div class="contact-address">
+  <h4>Contact Person</h4>
+</div>
