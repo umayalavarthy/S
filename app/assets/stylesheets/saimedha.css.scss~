@@ -22,7 +22,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 body {
 	line-height: 1;
-	background:url('site-background.jpg') repeat-x #cccccc;
+	#background:url('site-background.jpg') repeat-x #cccccc;
 
 }
 
@@ -190,7 +190,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e72d2', end
 	text-align:justify;
 	padding-top:5px;
 	color:#444444;
-  line-height:150%;
+  	line-height:150%;
+	padding-right: 66px;
 }
 .AchiversDetails {
 	width:1024px;
@@ -301,13 +302,14 @@ margin:5px;
 	background-color:#4379b7;
 }
 .contact-address{
-    margin: 5px;
+    margin: 28px;
+    padding-top: 30px;
     clear:both;
     width:100%;
 }
 
 h2.header-side {
 background: url('header_background.jpg');
-margin: 28px;
-padding-top: 30px;
+margin: 10px;
+padding:20px;
 }
