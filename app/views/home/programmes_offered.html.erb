@@ -1,22 +1,39 @@
+<div class="middle_desc">
+  <div class="topperslist">
+    <%= image_tag "toppers.jpg" %>
+  </div>
+  <div class="middle_desc_left">
 
-<h2>Programmes Offered @ Sai Medha Academy</h2>
-<br/><br/><br/>
-<h2>Classroom Coaching</h2>
+    <h2>Programmes Offered @ Sai Medha Academy</h2>
+    <h2>Classroom Coaching</h2>
 
 
- <br/> <br/>
-            
-  <% @courses.each do |c|%>
 
-  #<%= c.name %>- 2013
- 
-	<% @bs = c.branches %>
-	(
-	<% @bs.each do |b| %>
-		<%= b.name%>
-	<% end %>)
-  <br/><br/>
-  <% end %>
+    <table class="table table-striped">
+      <thead>
+      <tr>
 
- 
-<h2>Online Coaching</h2>
+        <th>Course </th>
+        <th>Branch</th>
+
+      </tr>
+      </thead>
+      <tbody>
+      <% @branches.each do |branch| %>
+          <tr>
+            <td><%= branch.course.name %></td>
+            <td><%= branch.name%></td>
+
+          </tr>
+      <% end %>
+      </tbody>
+    </table>
+    <h2>Online Coaching</h2>
+     <p>Starts Soon...</p>
+
+  </div>
+  <div class="AchiversDetails">
+    <marquee>
+      <%= image_tag "acheivers.jpg", :size=>"1200x100" %>
+    </marquee>
+  </div>

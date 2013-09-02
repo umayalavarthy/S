@@ -8,15 +8,15 @@ SaiMedha::Application.initialize!
 
 SaiMedha::Application.configure do
 	#devise
-config.action_mailer.default_url_options = { :host => 'http://infinite-headland-5015.herokuapp.com' }
+config.action_mailer.default_url_options = { :host => 'http://gatesaimedha.com' }
 #action mailer
 config.action_mailer.delivery_method = :smtp
 ActionMailer::Base.smtp_settings = {
   :address              => "smtp.gmail.com",  
   :port                 => 587,  
   :domain               => "gmail.com",  
-  :user_name            => "rakerails@gmail.com",  
-  :password             => "herokurails",  
+  :user_name            => "saimedha8@gmail.com",
+  :password             => "gatesaimedha",
   :authentication       => "plain",  
   :enable_starttls_auto => true  
 }

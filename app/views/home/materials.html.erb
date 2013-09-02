@@ -1,0 +1,172 @@
+<div class="middle_desc">
+
+  <div class="middle_desc_full">
+    <h2>Materials & Syllabus</h2>
+    <div class="accordion">
+      <h2 class="acc_trigger"><a href="">Gate</a></h2>
+      <div class="acc_container">
+        <a href="">Electrical & Electronics Engineering</a>
+        <div class="block">
+          <ul>
+            <li>Network Analysis</li>
+            <li>Electro Magnetic Fields</li>
+            <li> Signals &Systems</li>
+            <li> Control Systems</li>
+            <li>Digital and Micro Processors</li>
+            <li>Electrical Measuring Instruments</li>
+            <li> Electrical Machines</li>
+            <li>  Power Systems</li>
+            <li> Power Electronics</li>
+            <li> Electronic Devises and Circuits</li>
+            <li> Analog Circuits</li>
+            <li> Aptitude</li>
+            <li> Engineering Mathematics</li>
+          </ul>
+        </div>
+
+        <a href="">Electronics & Communication Engineering</a>
+        <div class="block">
+          <ul>
+          <li>Networks</li>
+          <li>Electronic Devises</li>
+          <li>Analog Circuits</li>
+          <li>Digital Circuits</li>
+          <li>Signals &Systems</li>
+          <li>Control Systems</li>
+          <li>Communications</li>
+          <li>Electromagnetics</li>
+          <li>Engineering Mathematics </li>
+          <li>Aptitude</li>
+          </ul>
+        </div>
+
+        <a href="">Computer Science & Information Technology</a>
+        <div class="block">
+          <ul>
+          <li>General Aptitude </li>
+          <li>Engineering Mathematics</li>
+          <li> Digital Logic </li>
+          <li> Computer Organization & Architecture </li>
+          <li>Programming & Data Structures</li>
+          <li> Algorithms </li>
+          <li> Theory of Computation </li>
+          <li> Compiler Design </li>
+          <li> Operating Systems </li>
+          <li> Databases</li>
+          <li> Information Systems & Software Engineering</li>
+          <li>Computer Networks & Information Security</li>
+          <li>Web Technologies</li>
+          </ul>
+        </div>
+      </div>
+      <h2 class="acc_trigger"><a href="">IES</a></h2>
+
+      <div class="acc_container">
+        <a href="">Electronics & Communication Engineering</a>
+        <div class="block">
+          <ul>
+          <li> Material & Components</li>
+          <li> Physical Electronics & Electronic Devises and ICS</li>
+          <li> Signals and Systems</li>
+          <li> Network Theory</li>
+          <li> Electromagnetic Theory</li>
+          <li> Electronic Measurements and Instrumentation</li>
+          <li> Analog Electronic Circuits</li>
+          <li> Digital Electronic Circuits</li>
+          <li> Control Systems</li>
+          <li>Communication Systems </li>
+          <li>Microwave Engineering</li>
+          <li>Computer Engineering</li>
+          </ul>
+        </div>
+        <a href="">Electrical & Electronics Engineering</a>
+        <div class="block">
+          <ul>
+          <li>Electromagnetic Theory</li>
+          <li>Electrical Materials</li>
+          <li> Electrical Circuits</li>
+          <li> Electronic Measurements and Instrumentation</li>
+          <li>Control Systems</li>
+          <li>Electrical Machines and Power Transformers</li>
+          <li>Power Systems</li>
+          <li>Analog and Digital Electronic Circuits</li>
+          <li>Micro Processors</li>
+          <li>Communication Systems</li>
+          <li>Power Electronics</li>
+          </ul>
+        </div>
+
+      </div>
+
+      <h2 class="acc_trigger"><a href="">PSU's</a></h2>
+
+      <div class="acc_container">
+        <a href="">Electrical & Electronics Engineering</a>
+        <div class="block">
+          <ul>
+          <li>Electromagnetic Theory</li>
+          <li>Electrical Materials</li>
+          <li> Electrical Circuits</li>
+          <li> Electronic Measurements and Instrumentation</li>
+          <li>Control Systems</li>
+          <li>Electrical Machines and Power Transformers</li>
+          <li>Power Systems</li>
+          <li>Analog and Digital Electronic Circuits</li>
+          <li>Micro Processors</li>
+          <li>Communication Systems</li>
+          <li>Power Electronics</li>
+
+          </ul>
+
+        </div>
+        <a href="">Electronics & Communication Engineering</a>
+        <div class="block">
+          <ul>
+          <li> Material & Components</li>
+          <li> Physical Electronics & Electronic Devises and ICS</li>
+          <li> Signals and Systems</li>
+          <li> Network Theory</li>
+          <li> Electromagnetic Theory</li>
+          <li> Electronic Measurements and Instrumentation</li>
+          <li> Analog Electronic Circuits</li>
+          <li> Digital Electronic Circuits</li>
+          <li> Control Systems</li>
+          <li>Communication Systems </li>
+          <li>Microwave Engineering</li>
+          <li>Computer Engineering</li>
+          </ul>
+        </div>
+      </div>
+
+  </div>
+</div>
+    <script type="text/javascript">
+
+        jQuery(document).ready(function ($) {
+            //Set default open/close settings
+            var divs=$('.accordion>div').hide(); //Hide/close all containers
+
+            var h2s=$('.accordion>h2').click(function () {
+                h2s.not(this).removeClass('active')
+                $(this).toggleClass('active')
+                divs.not($(this).next()).slideUp()
+                $(this).next().slideToggle()
+                return false; //Prevent the browser jump to the link anchor
+
+            });
+
+            var divs=$('.acc_container>div').hide(); //Hide/close all containers
+
+            var as=$('.acc_container>a').click(function () {
+                as.not(this).removeClass('active')
+                $(this).toggleClass('active')
+                divs.not($(this).next()).slideUp()
+                $(this).next().slideToggle()
+                return false; //Prevent the browser jump to the link anchor
+
+            });
+
+
+
+        });
+    </script>

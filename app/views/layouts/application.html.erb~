@@ -19,7 +19,7 @@
             
             <div class="social_network">
               <ul>
-                  <li><a href="#"><%= image_tag "facebook.jpg" %></a></li>
+                  <li><a href="http://www.facebook.com/gatesaimedha" target="_blank"><%= image_tag "facebook.jpg" %></a></li>
                     <li><a href="#"><%= image_tag "in.jpg" %></a></li>
                 </ul>
             </div>
@@ -28,14 +28,14 @@
         <div class="coaching_center">
           <div class="coaching_center_inner">
               <ul>
-                  <li><a href="#">Hyderabad</a></li>
-                    <li><a href="#">Tirupathi</a></li>
-                    <li><a href="#">Vijayawada</a></li>
-                    <li><a href="#">Guntur</a></li>
-                    <li><a href="#">Kakinada</a></li>
-                    <li><a href="#">Anantapur</a></li>
-                    <li><a href="#">GATE 2K13</a></li>
-                </ul>
+                <li><%= link_to 'Hyderabad', location_home_index_path %></li>
+                <li><%= link_to 'Tirupathi', location_home_index_path %></li>
+                <li><%= link_to 'Vijayawada', location_home_index_path %></li>
+                <li><%= link_to 'Guntur', location_home_index_path %></li>
+                <li><%= link_to 'Kakinada', location_home_index_path %></li>
+                <li><%= link_to 'Anantapur', location_home_index_path %></li>
+                <li><a href="#">GATE 2K14</a></li>
+              </ul>
           </div>
         </div>
     </div>
@@ -44,7 +44,7 @@
           <ul>
 
             <% if user_signed_in? %>
-                <li><%= link_to "Home", root_path %>           
+                <li><%= link_to "Home", root_path %> |</li>
                 <% if current_user.user_type == 507 %>
                 <li><%= link_to 'Courses', courses_path %></li>
                 <li><%= link_to 'Branches', branches_path %></li>
@@ -54,18 +54,19 @@
                 <% end %>
             <% end %>
              <% if !user_signed_in? %>
-                <li><%= link_to "home", root_path %>
+                <li><%= link_to "Home", root_path %>  | </li>
               <% end %>
-                <li><%= link_to 'About Us', aboutus_home_index_path %></li>
-                <li><%= link_to 'Programmes Offered', programmes_offered_home_index_path %></li>
-                <li><%= link_to 'Salient Features', features_home_index_path %></li>
-                <li><%= link_to 'Notifications', notifications_home_index_path %></li>
-                <li><%= link_to 'Contact Us', location_home_index_path %></li>
+                <li><%= link_to 'About Us', aboutus_home_index_path %> |     </li>
+                <li><%= link_to 'About Directors', aboutdirectors_home_index_path %> | </li>
+                <li><%= link_to 'Programmes Offered', programmes_offered_home_index_path %> | </li>
+            <li><%= link_to 'Salient Features', features_home_index_path %> |</li>
+                <li><%= link_to 'Notifications', notifications_home_index_path %> | </li>
+                <li><%= link_to 'Contact Us', location_home_index_path %> | </li>
              <% if user_signed_in? %>
               <li><%= link_to "Logout",destroy_user_session_path, :method => :delete %></li>
              <% end %>
              <% if !user_signed_in? %>
-                <li><%= link_to "Sign In/Sign Up", '/users/sign_in' %>
+                <li><%= link_to "JOIN", '/users/sign_in' %>
               <% end %>
 
               </ul> 
@@ -102,12 +103,13 @@
             <div class="fot_links" style=" width: 120px;">
               <h2>Centres</h2>
                 <ul>
-                    <li><a href="#">Hyderabad</a></li>
-                    <li><a href="#">Tirupathi</a></li>
-                    <li><a href="#">Vijayawada</a></li>
-                    <li><a href="#">Guntur</a></li>
-                    <li><a href="#">Kakinada</a></li>
-                    <li><a href="#">Anantapur</a></li>
+                  <li><%= link_to 'Hyderabad', location_home_index_path %></li>
+                  <li><%= link_to 'Tirupathi', location_home_index_path %></li>
+                  <li><%= link_to 'Vijayawada', location_home_index_path %></li>
+                  <li><%= link_to 'Guntur', location_home_index_path %></li>
+                  <li><%= link_to 'Kakinada', location_home_index_path %></li>
+                  <li><%= link_to 'Anantapur', location_home_index_path %></li>
+
                 </ul>
             </div>
             <div class="fot_links" style=" width: 250px;">
@@ -126,19 +128,19 @@
                 <ul>
                   <li><a href="#">Why GATE Preparation</a></li>
                     <li><a href="#">GATE Question papers</a></li>
-                    <li><a href="#">GATE 2013 Cutoff marks</a></li>
-                    <li><a href="#">MTech 2013 Counselling</a></li>
-                    <li><a href="#">GATE 2013 Toppers</a></li>
-                    <li><a href="#">IES 2013 Rankers</a></li>
+                    <li><a href="#">GATE 2014 Cutoff marks</a></li>
+                    <li><a href="#">MTech 2014 Counselling</a></li>
+                    <li><a href="#">GATE 2014 Toppers</a></li>
+                    <li><a href="#">IES 2014 Rankers</a></li>
                 </ul>
             </div>
             <div class="fot_links">
               <h2>About US</h2>
                 <ul>
-                  <li><a href="#">Management</a></li>
+                    <li><%= link_to 'Management', aboutdirectors_home_index_path %>  </li>
                     <li><a href="#">Faculty</a></li>
                     <li><a href="#">Our Achievements</a></li>
-                    <li><a href="#">Contact Us</a></li>                 
+                    <li><%= link_to 'Contact Us', location_home_index_path %></li>
                 </ul>
             </div>
             <div class="copyrights">

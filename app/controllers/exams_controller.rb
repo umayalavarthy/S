@@ -41,7 +41,7 @@ class ExamsController < ApplicationController
   # POST /exams.json
   def create
     @exam = Exam.new(params[:exam])
-
+    @exam.branch_id = params[:branch_id]
     respond_to do |format|
       if @exam.save
         format.html { redirect_to @exam, notice: 'Exam was successfully created.' }
@@ -60,6 +60,8 @@ class ExamsController < ApplicationController
 
     respond_to do |format|
       if @exam.update_attributes(params[:exam])
+        @exam.branch_id = params[:branch_id]
+        @exam.save
         format.html { redirect_to @exam, notice: 'Exam was successfully updated.' }
         format.json { head :no_content }
       else

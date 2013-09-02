@@ -8,6 +8,10 @@
   <dd><%= @exam.name %></dd>
   <dt><strong><%= model_class.human_attribute_name(:exam_type) %>:</strong></dt>
   <dd><%= @exam.exam_type %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:course_id) %>:</strong></dt>
+  <dd><%= @exam.course.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:branch_id) %>:</strong></dt>
+  <dd><%= @exam.branch.name %></dd>
 </dl>
 
 <div class="form-actions">

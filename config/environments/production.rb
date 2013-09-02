@@ -59,6 +59,6 @@ SaiMedha::Application.configure do
   config.i18n.fallbacks = true
   config.active_support.deprecation = :notify
   #devise
-  config.action_mailer.default_url_options = { :host => 'yourapp.heroku.com' }
+  config.action_mailer.default_url_options = { :host => 'gatesaimedha.com' }
 
 end

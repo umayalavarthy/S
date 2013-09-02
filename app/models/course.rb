@@ -3,4 +3,5 @@ class Course < ActiveRecord::Base
   attr_accessible :name
   has_many :branches, :dependent => :destroy
   has_many :subjects, :dependent => :destroy
+  has_many :exams, :dependent => :destroy
 end

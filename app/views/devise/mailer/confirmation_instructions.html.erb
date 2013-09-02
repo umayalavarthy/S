@@ -1,7 +1,17 @@
 <p>Hi <%= @resource.email %>!</p>
 
-<p>Welcome to S Academy.. </p>
-
+<p>Welcome to SaiMedha Academy.. </p>
+<br/>
+<p>Thanks for register with us. </p>
+<br/>
+<p>We surely steps up your knowledge and Give boost for your career.</p>
+<br/>
 <p>You can confirm your account email through the link below:</p>
 
 <p><%= link_to 'Confirm my account', confirmation_url(@resource, :confirmation_token => @resource.confirmation_token) %></p>
+
+
+<br/>
+<p>Thanks,</p>
+<p>SAIMEDHA</p>
+<%= image_tag "saimedha1.jpg", :size=>"100x100" %>

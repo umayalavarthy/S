@@ -16,6 +16,8 @@ SaiMedha::Application.routes.draw do
     get :features, :on => :collection
     get :aboutus, :on => :collection
     get :materials, :on => :collection
+    get :aboutdirectors, :on => :collection
+    get :create_user_details, :on => :collection
   end
   
   resources :branches

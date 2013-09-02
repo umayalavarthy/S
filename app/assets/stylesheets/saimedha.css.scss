@@ -1,12 +1,12 @@
 
 @charset "utf-8";
-/* CSS Document */
+/* CSS Document 
 
 
 @font-face {
   font-family: CurlzMTRegular;
   src: url(fonts/CurlzMTRegular.eot);
-}
+}*/
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
@@ -22,7 +22,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 body {
 	line-height: 1;
-	background:url('site-background.jpg') repeat-x #cccccc;
+	/*background:url('site-background.jpg') repeat-x #cccccc;*/
 
 }
 
@@ -51,7 +51,7 @@ table {
 }
 .main_wrapper {
 	width:100%;
-	height:700px;
+
 }
 .header_wrapper {
 	width:1024px;
@@ -61,6 +61,7 @@ table {
 .logo_social {
 	float:left;
 	width:1024px;
+	background-color: #FEFEFE;
 }
 .logo {
 	float:left;
@@ -133,8 +134,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e72d2', end
 	margin-left:40px;
 }
 .menubar_links li {
-	padding-right:35px;
+	padding-right:5px;
 	float:left;
+    color:#fff;
 }
 .menubar_links li a {
 	color:#ffffff;
@@ -149,7 +151,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e72d2', end
 	margin:auto;
 }
 
-
 .Banner_slide {
 	width:1024px;
 	height:268px;
@@ -161,6 +162,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e72d2', end
 	float:left;
 	width:1024px;
 	margin:10px 0;
+    min-height: 300px;
 }
 .topperslist
 {
@@ -173,25 +175,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e72d2', end
 	margin-left:25px;
 }
 
+.middle_desc_full {
+  float:left;
+  width:100%;
+  margin: 20px 0px 33px 23px;
+}
 .middle_desc_left {
 	float:left;
 	width:725px;
-    margin: 51px 0px 33px 23px;
+    margin: 0px;
 }
-.middle_desc_left h2 {
+.middle_desc_left h2, .middle_desc_full h2 {
 	float:left;
 	color:#F30;
 	width:100%;
-	font-size:18px;
+	font-size:21px;
 	font-weight:bold;
+    margin-left:0px;
 }
-.middle_desc_left p {
+.middle_desc_left p, .middle_desc_full p {
 	float:left;
 	text-align:justify;
 	padding-top:5px;
 	color:#444444;
   	line-height:150%;
-	padding-right: 66px;
+	
 }
 .AchiversDetails {
 	width:1024px;
@@ -232,7 +240,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e72d2', end
     margin-right:12px;
 }
 .fot_links li {
-	list-style-image:url(../images/links_arrow.png);
+	list-style-image:url(links_arrow.png);
 	color:#787a7f;
 	padding-bottom:8px;
 }
@@ -294,6 +302,7 @@ margin:5px;
     float: left;
     padding: 15px 20px;
     text-decoration: none;
+    margin:10px;
 }
 
 .list-location ul li a:hover {
@@ -312,4 +321,38 @@ h2.header-side {
 background: url('header_background.jpg');
 margin: 10px;
 padding:20px;
+}
+#dialog {
+  display: none;
+}
+
+#dialog a {
+  clear:both;
+  float:none;
+  background: url("images/ui-bg_glass_25_cb842e_1x400.png") repeat-x scroll 50% 50% #CB842E;
+  border: 1px solid #D49768;
+  color: #FFFFFF;
+  font-weight: bold;
+  line-height: 30px;
+  padding:5px;
+}
+
+.acc_container a{
+  clear:both;
+  float:left;
+  width:98%;
+  padding-left:20px;
+  padding-bottom:20px;
+  background: url("plus.PNG") no-repeat;
+}
+.acc_container a:hover{
+  color: #000000;
+}
+.block ul{
+  margin-left:30px;
+  margin-bottom: 30px;
+}
+.block ul li {
+  list-style-type: square;
+  padding:5px !important;
 }
