@@ -19,8 +19,9 @@
                 <%= image_tag "saimedha.jpg"%>
             </div>
             <%= image_tag "logo2.png", :size=>'600x30'%>
-            
-            <div class="social_network">
+
+
+          <div class="social_network">
               <ul>
                   <li><a href="http://www.facebook.com/gatesaimedha" target="_blank"><%= image_tag "facebook.jpg" %></a></li>
                     <li><a href="#"><%= image_tag "in.jpg" %></a></li>
@@ -31,13 +32,13 @@
         <div class="coaching_center">
           <div class="coaching_center_inner">
               <ul>
-                <li><%= link_to 'Hyderabad', location_home_index_path %></li>
-                <li><%= link_to 'Tirupathi', location_home_index_path %></li>
-                <li><%= link_to 'Vijayawada', location_home_index_path %></li>
-                <li><%= link_to 'Guntur', location_home_index_path %></li>
-                <li><%= link_to 'Kakinada', location_home_index_path %></li>
-                <li><%= link_to 'Anantapur', location_home_index_path %></li>
-                <li><a href="#">GATE 2K14</a></li>
+                <li><%= link_to 'Hyderabad', location_home_index_path(:city=>"hyderabad") %></li>
+                <li><%= link_to 'Tirupathi', location_home_index_path(:city=>"tirupathi") %></li>
+                <li><%= link_to 'Vijayawada', location_home_index_path(:city=>"vijayawada") %></li>
+
+                <li><a href="http://gate.iitkgp.ac.in/gate2014/" target="_blank">GATE 2K14</a></li>
+                <li><a href="#">About IES</a></li>
+                <li><a href="#">Gallery & Achievements</a></li>
               </ul>
           </div>
         </div>
@@ -77,6 +78,7 @@
             <% if !user_signed_in? && params[:controller] == "home" && params[:action] == "index"  %>
             <div id="dialog" title="Register with SaiMedha">
               <h1>Welcome to SAI MEDHA</h1>   <br/>
+              <%= image_tag "sgate.jpg", :size=>'600x30'%>   <br/> <br/>
               <h3>We are coming to your college to give you more information</h3>
               <br/>
               <p>Mean while register with us.</p>
@@ -89,7 +91,11 @@
             <% if user_signed_in? && current_user.phone.to_s.length != 10 && params[:controller] == "home" && params[:action] == "index"  %>
                 <div id="dialog" title="Student Form">
 
-                  <h3>Fill more details to get in touch with you</h3>
+                  <h3>Fill more details to get in touch with you</h3>  <br/>
+                  <div class="left-pane-pop">
+                    <%= image_tag "rocket.jpg", :size=>'200x30'%>
+                  </div>
+                  <div class="right-pane-pop">
                   <%= form_for create_user_details_home_index_path, :html => { :class => 'form-horizontal' } do |f| %>
                       <div class="control-group">
                         <%= f.label :name, :class => 'control-label' %>
@@ -114,6 +120,7 @@
                         <%= f.submit "Save", :class => 'btn btn-primary' %>
 
                       </div>
+                        </div>
                   <% end %>
 
 
@@ -166,13 +173,9 @@
             <div class="fot_links" style=" width: 120px;">
               <h2>Centres</h2>
                 <ul>
-                  <li><%= link_to 'Hyderabad', location_home_index_path %></li>
-                  <li><%= link_to 'Tirupathi', location_home_index_path %></li>
-                  <li><%= link_to 'Vijayawada', location_home_index_path %></li>
-                  <li><%= link_to 'Guntur', location_home_index_path %></li>
-                  <li><%= link_to 'Kakinada', location_home_index_path %></li>
-                  <li><%= link_to 'Anantapur', location_home_index_path %></li>
-
+                  <li><%= link_to 'Hyderabad', location_home_index_path(:city=>"hyderabad") %></li>
+                  <li><%= link_to 'Tirupathi', location_home_index_path(:city=>"tirupathi") %></li>
+                  <li><%= link_to 'Vijayawada', location_home_index_path(:city=>"vijayawada") %></li>
                 </ul>
             </div>
             <div class="fot_links" style=" width: 250px;">

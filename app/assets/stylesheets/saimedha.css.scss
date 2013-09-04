@@ -327,14 +327,15 @@ padding:20px;
 }
 
 #dialog a {
-  clear:both;
-  float:none;
+
+  float:right;
   background: url("images/ui-bg_glass_25_cb842e_1x400.png") repeat-x scroll 50% 50% #CB842E;
   border: 1px solid #D49768;
   color: #FFFFFF;
   font-weight: bold;
   line-height: 30px;
   padding:5px;
+  margin-right: 10px;
 }
 
 .acc_container a{
@@ -355,4 +356,17 @@ padding:20px;
 .block ul li {
   list-style-type: square;
   padding:5px !important;
+}
+.left-pane-pop{
+  float:left;
+
+}
+.right-pane-pop{
+  float:right;
+}
+.right-pane-pop .form-horizontal .control-label{
+  width:60px;
+}
+.right-pane-pop .form-horizontal .controls {
+  margin-left: 0;
 }

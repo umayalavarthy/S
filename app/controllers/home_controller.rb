@@ -5,7 +5,7 @@ class HomeController < ApplicationController
   end
 
   def location
-
+    @city=params[:city]
   end
 
   def programmes_offered

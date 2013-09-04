@@ -5,17 +5,21 @@
 
 
  <ul>
-  <li><a href="#">HYDERABAD</a></li>
-<li><a href="#">TIRUPATHI</a></li>
-  <li><a href="#">VIJAYAWADA</a></li>
-  <li><a href="#">KAKINADA</a></li>
+   <li><%= link_to 'Hyderabad', location_home_index_path(:city=>"hyderabad") %></li>
+   <li><%= link_to 'Tirupathi', location_home_index_path(:city=>"tirupathi") %></li>
+   <li><%= link_to 'Vijayawada', location_home_index_path(:city=>"vijayawada") %></li>
 
-<li><a href="#">GUNTUR</a></li>
-<li><a href="#">ANANTAPUR</a></li>
 </ul>
 
 </div>
 
 <div class="contact-address">
-  <%= image_tag "contact.png"%>
+  <% if @city=="hyderabad"%>
+        <%= image_tag "contact.png"%>
+   <% elsif @city == "tirupathi" %>
+        <%= image_tag "contacttirupathi.png"%>
+   <% else %>
+        <%= image_tag "contactvijayawada.png" %>
+   <% end %>
+
 </div>
