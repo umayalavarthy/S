@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require twitter/bootstrap
 //= require_tree .
+//= require jquery
+//= require jquery.rambling.slider
 function get_course_branches(id)
 {
     $.ajax({
@@ -25,3 +27,5 @@ function get_course_branches(id)
     });
 
 }
+
+

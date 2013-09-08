@@ -97,7 +97,7 @@ table {
 }
 .coaching_center_inner li {
 	float:left;
-	margin-right:20px;
+	margin-right:15px;
 }
 .coaching_center_inner li a {
 	float:left;
@@ -329,7 +329,7 @@ padding:20px;
 #dialog a {
 
   float:right;
-  background: url("images/ui-bg_glass_25_cb842e_1x400.png") repeat-x scroll 50% 50% #CB842E;
+  background: url("") repeat-x scroll 50% 50% #CB842E;
   border: 1px solid #D49768;
   color: #FFFFFF;
   font-weight: bold;
@@ -369,4 +369,53 @@ padding:20px;
 }
 .right-pane-pop .form-horizontal .controls {
   margin-left: 0;
+}
+.status-messages {
+  background-color: #FCF8E3;
+  border: 1px solid #FBEED5;
+  border-radius: 4px 4px 4px 4px;
+  margin-bottom: 2px;
+  padding: 0;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  margin-top:2px;
+}
+.alert {
+  border: none;
+  margin-bottom:0px;
+}
+.notice {
+  padding-top:300px;
+  padding-left: 30px;
+}
+.new_user_rem label {
+  float:left;
+  clear:right;
+  padding: 2px 5px 5px 5px;
+}
+#user_remember_me{
+  float:left;
+}
+.question-inex{
+   margin-left:10px;
+  margin-top:10px;
+  line-height:24px;
+}
+.answer-inex{
+   margin:10px 10px 10px 30px;
+  line-height: 28px;
+}
+
+.answer-inex input{
+  margin:0;
+}
+#slider img {
+  border:solid 5px green;
+}
+.abouties{
+  line-height:24px;
+}
+.abouties h4 {
+  font-size:20px;
+  color:black;
+  font-weight: bold;
 }

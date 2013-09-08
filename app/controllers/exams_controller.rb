@@ -1,6 +1,7 @@
 class ExamsController < ApplicationController
   # GET /exams
   # GET /exams.json
+  before_filter :hacker_admin_auth, :except=>[:index, :show, :start_exam, :update_exam]
   def index
     @exams = Exam.all
 
@@ -81,5 +82,31 @@ class ExamsController < ApplicationController
       format.html { redirect_to exams_url }
       format.json { head :no_content }
     end
+  end
+
+  def start_exam
+    @exam = Exam.find(params[:id])
+    c = @exam.questions.count
+    @questions = @exam.questions.sample(c)
+  end
+  def update_exam
+    @exam = Exam.find(params[:id])
+    @count = @exam.questions.count
+    arr = (1..@count).to_a
+    @total =0
+    arr.each do |n|
+      @total += params["answer-#{n}"].to_i
+    end
+  end
+
+  private
+  def hacker_admin_auth
+        if user_signed_in?
+          puts "userrrrrrrrrrrrrrrrrrrrrrr"
+          if current_user.user_type != 507
+            puts "adminnnnnnnnnnnnnnnnnnn"
+            redirect_to root_path;
+          end
+        end
   end
 end

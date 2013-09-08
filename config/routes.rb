@@ -7,7 +7,12 @@ SaiMedha::Application.routes.draw do
 
 
   resources :subjects 
-  resources :exams
+  resources :exams do
+    member do
+      get :start_exam
+      post :update_exam
+    end
+  end
 
   resources :home do
     get :location, :on => :collection
@@ -16,8 +21,11 @@ SaiMedha::Application.routes.draw do
     get :features, :on => :collection
     get :aboutus, :on => :collection
     get :materials, :on => :collection
+    get :gallery, :on => :collection
+    get :abouties, :on => :collection
     get :aboutdirectors, :on => :collection
     get :create_user_details, :on => :collection
+    get :allusers, :on => :collection
   end
   
   resources :branches

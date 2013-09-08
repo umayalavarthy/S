@@ -35,6 +35,7 @@ end
 
 gem 'thin'
 
+
 gem 'less-rails'
 gem 'jquery-rails'
 

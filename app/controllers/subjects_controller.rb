@@ -1,6 +1,7 @@
 class SubjectsController < ApplicationController
   # GET /subjects
   # GET /subjects.json
+  before_filter :hacker_admin_auth,
   def index
     @subjects = Subject.all
 
@@ -78,6 +79,17 @@ class SubjectsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to subjects_url }
       format.json { head :no_content }
+    end
+  end
+
+  private
+  def hacker_admin_auth
+    if user_signed_in?
+      puts "userrrrrrrrrrrrrrrrrrrrrrr"
+      if current_user.user_type != 507
+        puts "adminnnnnnnnnnnnnnnnnnn"
+        redirect_to root_path;
+      end
     end
   end
 end

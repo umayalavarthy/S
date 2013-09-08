@@ -1,0 +1,45 @@
+<%= form_tag update_exam_exam_path(@exam) do %>
+    <% i = 1 %>   <ol>
+      <% @questions.each do |question|%>
+        <li>
+          <div class="question-inex">
+           <b style="border:1px solid green;">&nbsp;<%= i%>&nbsp;</b> <%= question.question %>   <br/>
+          </div>
+          <div class="answer-inex">
+            <div class="member">
+                <%= radio_button_tag "answer-#{i}","1" %> <%= question.correct_answer%>  <br/>
+            </div>
+            <div class="member">
+                <%= radio_button_tag "answer-#{i}","0" %> <%= question.incorrect_answer_1%><br/>
+            </div>
+            <div class="member">
+                <%= radio_button_tag "answer-#{i}","0" %> <%= question.incorrect_answer_2%><br/>
+            </div>
+            <div class="member">
+                <%= radio_button_tag "answer-#{i}","0" %> <%= question.incorrect_answer_3%> <br/>
+            </div>
+          </div>
+        </li>
+
+        <% i += 1 %>
+      <% end %>   </ol> <br/> <br/>
+    <%= submit_tag "Submit", :class=>'btn' %>
+    <br/>
+    <br/>
+<% end %>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.answer-inex').each(function(){
+            var $ul = $(this);
+            var $liArr = $ul.children('.member');
+            $liArr.sort(function(a,b){
+                var temp = parseInt( Math.random()*10 );
+                var isOddOrEven = temp%2;
+                var isPosOrNeg = temp>5 ? 1 : -1;
+                return( isOddOrEven*isPosOrNeg );
+            })
+               .appendTo($ul);
+        });
+    });
+</script>

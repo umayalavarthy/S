@@ -45,4 +45,14 @@ class HomeController < ApplicationController
     redirect_to root_path;
   end
 
+  def gallery
+
+  end
+  def abouties
+
+  end
+  def allusers
+     @users = User.all
+  end
+
 end
