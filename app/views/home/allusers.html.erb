@@ -3,7 +3,12 @@
   <tr>
   <th>Name</th>
   <th>Email</th>
-  <th> Phone</th> </tr>
+  <th> Phone</th>
+  <th>Gender</th>
+  <th>Pursuing</th>
+  <th>College</th>
+  <th>Gate Rank</th>
+  </tr>
   </thead>
   <tbody>
     <% @users.each do |user|%>
@@ -11,8 +16,11 @@
             <td><%= user.name %>  </td>
             <td><%= user.email %> </td>
             <td><%= user.phone %>  </td>
-
-  </tr>
+            <td><% if user.gender == true  %> Male <% elsif user.gender==false %> Female <% end %> </td>
+            <td><%= user.pursuing %>  </td>
+            <td><%= user.college %>  </td>
+            <td><%= user.gate_rank %>  </td>
+           </tr>
 
     <% end %>
     </tbody>

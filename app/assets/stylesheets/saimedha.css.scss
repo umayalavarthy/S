@@ -365,7 +365,21 @@ padding:20px;
   float:right;
 }
 .right-pane-pop .form-horizontal .control-label{
-  width:60px;
+
+}
+.right-pane-pop .controls {
+  float:right;
+}
+.right-pane-pop .controls select{
+  width:80px;
+  clear:left;
+  float:none;
+}
+.form-horizontal .control-label {
+  width:auto;
+}
+#gender-div select{
+  width:220px;
 }
 .right-pane-pop .form-horizontal .controls {
   margin-left: 0;

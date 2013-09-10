@@ -41,6 +41,13 @@ class HomeController < ApplicationController
     @user.name=params["/home/create_user_details"]["name"]
     @user.phone = params["/home/create_user_details"]["phone"]
     @user.college =  params["/home/create_user_details"]["college"]
+    @user.gender =  params["/home/create_user_details"]["gender"]
+    @user.born =  Date.new(params["/home/create_user_details"]["born(1i)"].to_i,
+                           params["/home/create_user_details"]["born(2i)"].to_i,
+                           params["/home/create_user_details"]["born(3i)"].to_i)
+    @user.gate_rank = params["/home/create_user_details"]["gate_rank"]
+    @user.ies_rank = params["/home/create_user_details"]["ies_rank"]
+    @user.pursuing = params["/home/create_user_details"]["pursuing"]
     @user.save
     redirect_to root_path;
   end

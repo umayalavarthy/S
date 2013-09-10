@@ -86,7 +86,7 @@
               <%= image_tag "sgate.jpg", :size=>'600x30'%>   <br/> <br/>
               <h3>We are coming to your college to give you more information</h3>
               <br/>
-              <p>Mean while register with us.</p>
+              <p>Mean while register with us.</p>  <br/>
               <p>We are offering free online tests for registered students..</p>
               <br/>
 
@@ -99,16 +99,31 @@
 
                   <h3>Fill more details to get in touch with you</h3>  <br/>
                   <div class="left-pane-pop">
-                    <%= image_tag "rocket.jpg", :size=>'200x30'%>
+                    <%#= image_tag "rocket.jpg", :size=>'200x30'%>
                   </div>
                   <div class="right-pane-pop">
                   <%= form_for create_user_details_home_index_path, :html => { :class => 'form-horizontal' } do |f| %>
                       <div class="control-group">
-                        <%= f.label :name, :class => 'control-label' %>
+                        <span class = 'control-label' >Full Name</span>
                         <div class="controls">
                           <%= f.text_field :name, :class => 'text_field' %>
                         </div>
                       </div>
+
+                        <div class="control-group">
+                          <%= f.label :gender, :class => 'control-label' %>
+                          <div class="controls" id="gender-div">
+                            <%= f.select :gender, options_for_select([['I Am'],['Male', '1'], ['Female', '0']]), :class => 'text_field' %>
+                          </div>
+                        </div>
+
+                        <div class="control-group">
+                          <span class = 'control-label' >Date of Birth</span>
+                          <div class="controls">
+                            <%= f.date_select :born,:start_year=>1970,:end_year=>2015, :class => 'text_field' %>
+                          </div>
+                        </div>
+
                       <div class="control-group">
                         <%= f.label :phone, :class => 'control-label' %>
                         <div class="controls">
@@ -118,9 +133,29 @@
                       <div class="control-group">
                         <%= f.label :college, :class => 'control-label' %>
                         <div class="controls">
-                          <%= f.text_field :college, :class => 'text_field' %>
+                          <%= f.text_field :college,:placeholder => "Eg: SVIT, Secunderabad", :class => 'text_field' %>
                         </div>
                       </div>
+
+                        <div class="control-group">
+                          <span class = 'control-label' >Study(Pursuing/Completed)</span>
+                          <div class="controls">
+                            <%= f.text_field :pursuing,:placeholder => "Eg: Btech, CSE 3rd year ", :class => 'text_field' %>
+                          </div>
+                        </div>
+
+                        <div class="control-group">
+                          <span class = 'control-label'>Gate Rank(If attended)</span>
+                          <div class="controls">
+                            <%= f.text_field :gate_rank,:placeholder => "Rank - Roll No", :class => 'text_field' %>
+                          </div>
+                        </div>
+                        <div class="control-group">
+                          <span class = 'control-label'>IES Rank(If attended)</span>
+                          <div class="controls">
+                            <%= f.text_field :ies_rank,:placeholder => "Rank - Roll No", :class => 'text_field' %>
+                          </div>
+                        </div>
 
                       <div class="form-actions" id="sformsubmit">
                         <%= f.submit "Save", :class => 'btn btn-primary' %>
