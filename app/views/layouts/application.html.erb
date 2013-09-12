@@ -219,12 +219,12 @@
               <h2>Test Series</h2>
                 <ul>
                   <li><%= link_to 'GATE Online Test Series', exams_path %></li>
-                    <li><a href="#">GATE Class Room Test Series</a></li>
-                    <li><a href="#">IES Online Test Series</a></li>
-                    <li><a href="#">IES Class Room Test Series</a></li>
-                    <li><a href="#">PSU Papers </a></li>
-                    <li><a href="#">Previous Question Papers</a></li>
-                    <li><a href="#">Free Online Test Serie</a></li>
+                    <li><%= link_to 'GATE Class Room Test Series', exams_path %></li>
+                    <li><%= link_to 'IES Online Test Series', exams_path %></li>
+                    <li><%= link_to 'IES Class Room Test Series', exams_path %></li>
+                    <li><%= link_to 'PSU Papers', exams_path %></li>
+                    <li><%= link_to 'Previous Question Papers', exams_path %></li>
+                    <li><%= link_to 'Free Online Test Serie', exams_path %></li>
                 </ul>
             </div>
             <div class="fot_links" style=" width: 220px;">
@@ -232,11 +232,11 @@
                 <ul>
                   <li><a href="http://gate.iitkgp.ac.in/gate2014/?id=NTozNzlQV1VUODo5MWMxNWIyNTllZjBjOTdiZjJiNWY0ODNhZWI2M2FkZA==" target="_blank">Why GATE Preparation</a></li>
                   <li><a href="http://gate.iitkgp.ac.in/gate2014/" target="_blank">GATE 2014 Schedule</a></li>
-                    <li><a href="#">GATE Question papers</a></li>
+                    <li><%= link_to 'GATE Question papers', exams_path %></li>
                     <li><a href="#">GATE 2013 Cutoff marks</a></li>
 
                     <li><a href="#">ECET </a></li>
-                    <li><a href="#">GATE 2013 Toppers</a></li>
+                    <li><%= link_to "GATE 2013 Toppers", gallery_home_index_path%></li>
                     <li><a href="http://www.upscsyllabus.in/" target="_blank">IES Syllabus</a></li>
                 </ul>
             </div>
@@ -245,7 +245,7 @@
                 <ul>
                     <li><%= link_to 'Management', aboutdirectors_home_index_path %>  </li>
                     <li><a href="#">Faculty</a></li>
-                    <li><a href="#">Our Achievements</a></li>
+                    <li><%= link_to "Our Achievements", gallery_home_index_path%></li>
                     <li><%= link_to 'Contact Us', location_home_index_path %></li>
                 </ul>
             </div>

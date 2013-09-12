@@ -3,20 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/branches_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/branches_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/courses_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/courses_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/exams_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/exams_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/questions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/questions_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/subjects_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/subjects_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exams/update_exam.html.erb" afterPath="$PROJECT_DIR$/app/views/exams/update_exam.html.erb" />
     </list>
     <ignored path="S.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1379004658187" ignored="false" />
     <file path="/notifications.html.erb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1377341933313" ignored="false" />
     <file path="/saimedha.css.scss" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1378837308223" ignored="false" />
-    <file path="/application.html.erb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1379005147495" ignored="false" />
+    <file path="/application.html.erb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1379006373513" ignored="false" />
     <file path="/aboutus.html.erb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1377351540368" ignored="false" />
     <file path="/features.html.erb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1377351446215" ignored="false" />
     <file path="/home_controller.rb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1378837573633" ignored="false" />
@@ -67,10 +60,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="application.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="83" column="61" selection-start="4044" selection-end="4044" vertical-scroll-proportion="-3.75">
+            <state line="243" column="43" selection-start="11457" selection-end="11457" vertical-scroll-proportion="0.4703633">
               <folding />
             </state>
           </provider>
@@ -79,16 +72,16 @@
       <file leaf-file-name="home_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="72" selection-start="953" selection-end="953" vertical-scroll-proportion="0.0">
+            <state line="36" column="29" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="exams_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="exams_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/exams_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="103" column="16" selection-start="2516" selection-end="2516" vertical-scroll-proportion="0.73179394">
+            <state line="100" column="32" selection-start="2436" selection-end="2436" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -148,21 +141,21 @@
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/home/allusers.html.erb" />
         <option value="$PROJECT_DIR$/config/environment.rb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/questions_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/subjects_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/courses_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/branches_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/exams/update_exam.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/exams_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="52" />
+    <option name="y" value="24" />
     <option name="width" value="1301" />
-    <option name="height" value="716" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -206,46 +199,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="S" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="S" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="S" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="S" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="S" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exams" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -549,8 +502,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="52" width="1301" height="716" extended-state="7" />
-    <editor active="true" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -671,20 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="83" column="61" selection-start="4044" selection-end="4044" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="72" selection-start="953" selection-end="953" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/branches_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="88" column="0" selection-start="2089" selection-end="2089" vertical-scroll-proportion="0.7089947">
@@ -734,9 +673,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="29" selection-start="418" selection-end="418" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/exams_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="16" selection-start="2516" selection-end="2516" vertical-scroll-proportion="0.73179394">
+        <state line="100" column="32" selection-start="2436" selection-end="2436" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="243" column="43" selection-start="11457" selection-end="11457" vertical-scroll-proportion="0.4703633">
           <folding />
         </state>
       </provider>
