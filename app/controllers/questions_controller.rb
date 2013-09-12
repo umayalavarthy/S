@@ -1,7 +1,7 @@
 class QuestionsController < ApplicationController
   # GET /questions
   # GET /questions.json
-  before_filter :hacker_admin_auth,
+  before_filter :hacker_admin_auth
   def index
     @questions = Question.all
 

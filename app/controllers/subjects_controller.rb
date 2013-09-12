@@ -1,7 +1,7 @@
 class SubjectsController < ApplicationController
   # GET /subjects
   # GET /subjects.json
-  before_filter :hacker_admin_auth,
+  before_filter :hacker_admin_auth
   def index
     @subjects = Subject.all
 
