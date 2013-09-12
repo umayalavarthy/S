@@ -85,9 +85,7 @@ class SubjectsController < ApplicationController
   private
   def hacker_admin_auth
     if user_signed_in?
-      puts "userrrrrrrrrrrrrrrrrrrrrrr"
       if current_user.user_type != 507
-        puts "adminnnnnnnnnnnnnnnnnnn"
         redirect_to root_path;
       end
     end

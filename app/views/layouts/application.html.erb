@@ -80,7 +80,7 @@
                 <li><%= link_to "Sign Up/Sign In", '/users/sign_in' %></li>
               <% end %>
 
-            <% if !user_signed_in? && params[:controller] == "home" && params[:action] == "index"  %>
+            <% if !user_signed_in? && params[:controller] == "home" && params[:action] == "index" %>
             <div id="dialog" title="Register with SaiMedha">
               <h1>Welcome to SAI MEDHA</h1>   <br/>
               <%= image_tag "sgate.jpg", :size=>'600x30'%>   <br/> <br/>

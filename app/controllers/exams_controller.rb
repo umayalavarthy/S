@@ -91,20 +91,23 @@ class ExamsController < ApplicationController
   end
   def update_exam
     @exam = Exam.find(params[:id])
-    @count = @exam.questions.count
-    arr = (1..@count).to_a
+    @qcount = @exam.questions.count
+    arr = (1..@qcount).to_a
     @total =0
     arr.each do |n|
       @total += params["answer-#{n}"].to_i
     end
+    @result= Testresult.new
+    @result.user_id = current_user.id
+    @result.exam_id = @exam.id
+    @result.score = @total
+    @result.save
   end
 
   private
   def hacker_admin_auth
         if user_signed_in?
-          puts "userrrrrrrrrrrrrrrrrrrrrrr"
           if current_user.user_type != 507
-            puts "adminnnnnnnnnnnnnnnnnnn"
             redirect_to root_path;
           end
         end
