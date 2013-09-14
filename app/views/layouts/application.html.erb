@@ -44,7 +44,7 @@
                 <li><a href="http://gate.iitkgp.ac.in/gate2014/" target="_blank">GATE 2K14</a></li>
                 <li><%= link_to "About IES", abouties_home_index_path%></li>
                 <li><%= link_to "Gallery", gallery_home_index_path%></li>
-                <li><%= link_to 'Write a Test', exams_path %> </li>
+                <li><%= link_to 'Online Exam', exams_path %> </li>
               </ul>                ,
 
           </div>
@@ -91,7 +91,9 @@
               <h3>We are coming to your college to give you more information</h3>
               <br/>
               <p>Mean while register with us.</p>  <br/>
-              <p class = "highlight">We offer free online tests for registered students..</p>
+              <p class = "highlight">We offer free online tests for registered students ..</p>
+              <%= image_tag "practicetest.png"%>
+              <br/>
               <br/>
 
               <%= link_to "SIGN UP", '/users/sign_up' %>
@@ -227,7 +229,7 @@
                     <li><%= link_to 'IES Online Test Series', exams_path %></li>
                     <li><%= link_to 'IES Class Room Test Series', exams_path %></li>
                     <li><%= link_to 'PSU Papers', exams_path %></li>
-                    <li><%= link_to 'Previous Question Papers', exams_path %></li>
+
                     <li><%= link_to 'Free Online Test Series', exams_path %></li>
                 </ul>
             </div>

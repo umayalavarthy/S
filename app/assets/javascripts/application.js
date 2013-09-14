@@ -28,4 +28,18 @@ function get_course_branches(id)
 
 }
 
+$(document).ready(function(){
+    var dur = params[:duration]
+    var start = params[:settime]
+    alert(start);
+    alert(dur);
+
+    setTimeout(function() {
+        $('.submitexam').submit();
+    }, dur);
+
+})
+
+
+
 

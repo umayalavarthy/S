@@ -8,6 +8,7 @@
       <th><%#= model_class.human_attribute_name(:id) %></th>
       <th><%= model_class.human_attribute_name(:name) %></th>
       <th><%= model_class.human_attribute_name(:exam_type) %></th>
+      <th><%= model_class.human_attribute_name(:duration) %></th>
       <th><%= model_class.human_attribute_name(:course_id) %></th>
       <th><%= model_class.human_attribute_name(:branch_id) %></th>
       <% if current_user.user_type == 507 %><th><%=t '.actions', :default => t("helpers.actions") %></th><% end %>
@@ -17,8 +18,10 @@
     <% @exams.each do |exam| %>
       <tr>
         <td><%#= link_to exam.id, exam_path(exam) %></td>
-        <td><%=  link_to exam.name, exam_path(exam) %></td>
+        <% @testres = Testresult.find_by_user_id_and_exam_id(current_user.id, exam.id)%>
+        <td><% if @testres %><%= exam.name%> (You scored <%= @testres.score %>)<% else %><%=  link_to exam.name, exam_path(exam) %><% end %></td>
         <td><%= exam.exam_type %></td>
+        <td><%= exam.duration %></td>
         <td><%= exam.course.name %></td>
         <td><%= exam.branch.name %></td>
         <% if current_user.user_type == 507 %>

@@ -1,11 +1,50 @@
-<%= form_tag update_exam_exam_path(@exam) do %>
+<div class="noteexam">
+<b>Duration :</b><%= @exam.duration %> Minutes
+  <br/>
+On completion of this duration Test will submit automatically
+  <br/>
+ <%#= Time.now.strftime("%H:%M:%S %P ") %>
+  Current time:
+  <form name="Tick">
+    <input type="text" size="11" name="Clock">
+  </form>
+  <script>
+
+      function show(){
+          var Digital=new Date()
+          var hours=Digital.getHours()
+          var minutes=Digital.getMinutes()
+          var seconds=Digital.getSeconds()
+          var dn="AM"
+          if (hours>12){
+              dn="PM"
+              hours=hours-12
+          }
+          if (hours==0)
+              hours=12
+          if (minutes<=9)
+              minutes="0"+minutes
+          if (seconds<=9)
+              seconds="0"+seconds
+          document.Tick.Clock.value=hours+":"+minutes+":"
+                  +seconds+" "+dn
+          setTimeout("show()",1000)
+      }
+      show()
+      //-->
+  </script>
+</div>
+
+<%= form_tag update_exam_exam_path(@exam),:name=>"test", :id => 'submitexam' do %>
     <% i = 1 %>   <ol>
       <% @questions.each do |question|%>
         <li>
           <div class="question-inex">
            <b style="border:1px solid green;">&nbsp;<%= i%>&nbsp;</b> <%= question.question %>   <br/>
+
           </div>
           <div class="answer-inex">
+            <%= image_tag(question.qavatar_url) if question.qavatar? %>
             <div class="member">
                 <%= radio_button_tag "answer-#{i}","1" %> <%= question.correct_answer%>  <br/>
             </div>
@@ -23,7 +62,8 @@
 
         <% i += 1 %>
       <% end %>   </ol> <br/> <br/>
-    <%= submit_tag "Submit", :class=>'btn' %>
+    <%= submit_tag "Submit", :class=>'btn submitexam' %>
+
     <br/>
     <br/>
 <% end %>
@@ -41,5 +81,16 @@
             })
                .appendTo($ul);
         });
+
+        var dur = parseInt(location.search.substr(1).split("=")[1])*60000;
+        setTimeout(function() { submitexamform(); }, dur);
+
+
     });
+    function submitexamform(){
+        alert('Your time out, Exam will submits automatically')
+       $("#submitexam").submit()
+    }
+
+
 </script>
