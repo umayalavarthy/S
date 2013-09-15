@@ -29,5 +29,6 @@
               :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
               :class => 'btn btn-danger' %>
       <% end %>
-  <%= link_to "Start Exam", start_exam_exam_path(@exam,:eduration=>@exam.duration), :class => 'btn startexam'%>
+  <%= link_to "Write Exam", start_exam_exam_path(@exam,:eduration=>@exam.duration), :class => 'btn startexam'%>
 </div>
+

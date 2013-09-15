@@ -37,14 +37,17 @@
         <div class="coaching_center">
           <div class="coaching_center_inner">
               <ul>
-                <li><%= link_to 'Hyderabad', location_home_index_path(:city=>"hyderabad") %></li>
-                <li><%= link_to 'Tirupathi', location_home_index_path(:city=>"tirupathi") %></li>
-                <li><%= link_to 'Vijayawada', location_home_index_path(:city=>"vijayawada") %></li>
-
+                <li><%= link_to 'SaiMedha', aboutus_home_index_path %></li>
                 <li><a href="http://gate.iitkgp.ac.in/gate2014/" target="_blank">GATE 2K14</a></li>
                 <li><%= link_to "About IES", abouties_home_index_path%></li>
                 <li><%= link_to "Gallery", gallery_home_index_path%></li>
-                <li><%= link_to 'Online Exam', exams_path %> </li>
+                <li><%= link_to 'Contact Us', location_home_index_path(:city=>"hyderabad") %></li>
+
+                <li class="onlineexam">
+                  <%= link_to exams_path do %>
+                    <%= image_tag 'practicetest.png', :size => "292x30"%>
+                  <% end %>
+                  </li>
               </ul>                ,
 
           </div>
@@ -78,7 +81,8 @@
                 <li><%= link_to 'Notifications', notifications_home_index_path %> | </li>
                 <li><%#= link_to 'Contact Us', location_home_index_path %>  </li>
              <% if user_signed_in? %>
-              <li><%= link_to "Logout",destroy_user_session_path, :method => :delete %></li>
+                <li>  Hi <%= current_user.name%>--
+              <%= link_to "Logout",destroy_user_session_path, :method => :delete %></li>
              <% end %>
              <% if !user_signed_in?%>
                 <li><%= link_to "Sign Up/Sign In", '/users/sign_in' %></li>
@@ -86,6 +90,7 @@
 
             <% if !user_signed_in? && params[:controller] == "home" && params[:action] == "index" %>
             <div id="dialog" title="Register with SaiMedha">
+              <p class="notice"><%= notice %></p>
               <h1>Welcome to SAI MEDHA</h1>   <br/>
               <%= image_tag "sgate.jpg", :size=>'600x30'%>   <br/> <br/>
               <h3>We are coming to your college to give you more information</h3>
@@ -100,44 +105,59 @@
               <%= link_to "SIGN IN", '/users/sign_in' %>
             </div>
             <% end %>
-            <% if user_signed_in? && current_user.phone.to_s.length != 10 && params[:controller] == "home" && params[:action] == "index"  %>
+            <% if user_signed_in? && current_user.phone.to_s.length != 10 && params[:controller] == "home" && params[:action] == "index" %>
                 <div id="dialog" title="Student Form">
+                  <p class="notice"><%= notice %></p>
 
-                  <h3>Fill more details to get in touch with you</h3>  <br/>
+                  <p class="notice">Fields marked with (**) are mandatory fields.</p>
                   <div class="left-pane-pop">
                     <%#= image_tag "rocket.jpg", :size=>'200x30'%>
                   </div>
                   <div class="right-pane-pop">
                   <%= form_for create_user_details_home_index_path, :html => { :class => 'form-horizontal' } do |f| %>
                       <div class="control-group">
-                        <span class = 'control-label' >Full Name</span>
+                        <span class = 'control-label' >Full Name **</span>
                         <div class="controls">
                           <%= f.text_field :name, :class => 'text_field' %>
                         </div>
                       </div>
 
                         <div class="control-group">
-                          <%= f.label :gender, :class => 'control-label' %>
+                          <%= f.label :gender, :class => 'control-label' %> **
                           <div class="controls" id="gender-div">
                             <%= f.select :gender, options_for_select([['I Am'],['Male', '1'], ['Female', '0']]), :class => 'text_field' %>
                           </div>
                         </div>
 
                         <div class="control-group">
-                          <span class = 'control-label' >Date of Birth</span>
+                          <span class = 'control-label' >Date of Birth **</span>
                           <div class="controls">
                             <%= f.date_select :born,:start_year=>1970,:end_year=>2015, :class => 'text_field' %>
                           </div>
                         </div>
 
                       <div class="control-group">
-                        <%= f.label :phone, :class => 'control-label' %>
+                        <%= f.label :phone, :class => 'control-label' %>**
                         <div class="controls">
                           <%= f.text_field :phone, :class => 'text_field' %>
                         </div>
                       </div>
+
+                        <div class="control-group">
+                          <span>Area of Intrest **</span>
+                          <div class="controls">
+                            <select name="branch_id" class="selectbranch">
+                              <option value="">Select Branch</option>
+                              <% Branch.all.each do |author| %>
+                                  <option value="<%= author.id %>"><%=  author.course.name %> - <%= author.name %></option>
+                              <% end %>
+                            </select>
+                          </div>
+                        </div>
+
+
                       <div class="control-group">
-                        <%= f.label :college, :class => 'control-label' %>
+                        <%= f.label :college, :class => 'control-label' %>**
                         <div class="controls">
                           <%= f.text_field :college,:placeholder => "Eg: SVIT, Secunderabad", :class => 'text_field' %>
                         </div>

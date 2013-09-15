@@ -4,4 +4,5 @@ class Course < ActiveRecord::Base
   has_many :branches, :dependent => :destroy
   has_many :subjects, :dependent => :destroy
   has_many :exams, :dependent => :destroy
+  has_many :users, :dependent => :destroy
 end

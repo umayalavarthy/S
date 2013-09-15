@@ -1,5 +1,7 @@
 <div class="middle_desc">
-  
+  <div class="topperslist">
+    <%= image_tag "toppers.jpg" %>
+  </div>
   <div class="middle_desc_left">
 
     <h2>Programmes Offered @ Sai Medha Academy</h2>

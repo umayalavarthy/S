@@ -48,8 +48,12 @@ class HomeController < ApplicationController
     @user.gate_rank = params["/home/create_user_details"]["gate_rank"]
     @user.ies_rank = params["/home/create_user_details"]["ies_rank"]
     @user.pursuing = params["/home/create_user_details"]["pursuing"]
+    @user.branch_id = params[:branch_id]
+    if params[:branch_id].to_i != 0
+      @user.course_id = Branch.find(params[:branch_id]).course_id
+    end
     @user.save
-    redirect_to root_path;
+    redirect_to :back;
   end
 
   def gallery
@@ -59,7 +63,7 @@ class HomeController < ApplicationController
 
   end
   def allusers
-     @users = User.all
+     @users = User.all(:conditions=>"confirmed_at is NOT NULL")
   end
 
 end

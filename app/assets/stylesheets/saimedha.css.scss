@@ -97,7 +97,7 @@ table {
 }
 .coaching_center_inner li {
 	float:left;
-	margin-right:15px;
+	margin-right:10px;
 }
 .coaching_center_inner li a {
 	float:left;
@@ -444,4 +444,20 @@ p.highlight {
   background: sandybrown;
   line-height: 30px;
   border: 1px solid sienna;
+}
+#dialog .notice{
+  padding : 0px !important;
+  background: none repeat scroll 0 0 salmon;
+  color: #FFFFFF;
+  line-height: 38px;
+  margin-bottom: 20px;
+}
+.selectbranch {
+  width:220px !important;
+}
+li.onlineexam {
+  margin-top: -15px !important;
+}
+li.onlineexam span {
+  margin-top: -15px !important;
 }

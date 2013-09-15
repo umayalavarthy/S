@@ -3,8 +3,15 @@ class ExamsController < ApplicationController
   # GET /exams.json
   before_filter :hacker_admin_auth, :except=>[:index, :show, :start_exam, :update_exam]
   def index
-    @exams = Exam.all
-
+    if current_user.user_type == 507
+      @exams = Exam.all
+    else
+      if current_user.branch_id
+        @exams = Exam.find_all_by_branch_id(current_user.branch_id)
+      else
+        @exams = nil
+      end
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @exams }

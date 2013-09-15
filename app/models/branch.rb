@@ -4,4 +4,5 @@ class Branch < ActiveRecord::Base
   belongs_to :course, :foreign_key => :course_id
   has_many :subjects, :dependent => :destroy
   has_many :exams, :dependent => :destroy
+  has_many :users, :dependent => :destroy
 end

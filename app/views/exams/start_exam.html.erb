@@ -1,3 +1,6 @@
+<% if @questions.count == 0 %>
+      No Questions here
+<% else %>
 <div class="noteexam">
 <b>Duration :</b><%= @exam.duration %> Minutes
   <br/>
@@ -94,3 +97,4 @@ On completion of this duration Test will submit automatically
 
 
 </script>
+<% end %>
