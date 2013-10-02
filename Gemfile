@@ -47,7 +47,7 @@ gem 'jquery-rails'
 
 # Use unicorn as the app server
 # gem 'unicorn'
-
+gem "fog", "~> 1.3.1"
 # Deploy with Capistrano
 # gem 'capistrano'
 
