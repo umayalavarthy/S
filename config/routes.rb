@@ -26,6 +26,7 @@ SaiMedha::Application.routes.draw do
     get :aboutdirectors, :on => :collection
     get :create_user_details, :on => :collection
     get :allusers, :on => :collection
+    get :user_profile, :on => :collection
   end
   
   resources :branches

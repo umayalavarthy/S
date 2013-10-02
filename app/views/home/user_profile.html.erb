@@ -1,0 +1,24 @@
+<div class="middle_desc">
+
+  <div class="middle_desc_left">
+
+    <h2>Profile</h2>
+    <b>Name&nbsp;:&nbsp;</b><%= @user.name%>   <br/>
+    <b>Gender&nbsp;:&nbsp;</b><%= @user.gender== true ? "Male" : "Female" %>   <br/>
+    <b>Date Of Birth&nbsp;:&nbsp;</b><%= @user.born%>   <br/>
+    <b>Phone&nbsp;:&nbsp;</b><%= @user.phone%>   <br/>
+    <b>Branch&nbsp;:&nbsp;</b><%= @user.branch.name %>-<%= @user.branch.course.name %>   <br/>
+    <b>Qualification&nbsp;:&nbsp;</b><%= @user.pursuing%>   <br/>
+    <b>College&nbsp;:&nbsp;</b><%= @user.college%>   <br/>
+    <b>Gate Rank&nbsp;:&nbsp;</b><%= @user.gate_rank%>   <br/>
+    <b>IES Rank&nbsp;:&nbsp;</b><%= @user.ies_rank%>   <br/><br/><br/>
+
+    <%= link_to "Edit Profile", home_index_path(:update_profile=>1),:class => 'btn btn-primary'%>
+
+    <br/><br/>
+  </div>
+  <div class="AchiversDetails">
+    <marquee>
+      <%= image_tag "acheivers.jpg", :size=>"1200x100" %>
+    </marquee>
+  </div>

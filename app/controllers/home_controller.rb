@@ -1,7 +1,9 @@
 class HomeController < ApplicationController
   skip_before_filter :authenticate_user!
   def index
-    
+      if params[:update_profile]
+        @profile = true
+      end
   end
 
   def location
@@ -64,6 +66,9 @@ class HomeController < ApplicationController
   end
   def allusers
      @users = User.all(:conditions=>"confirmed_at is NOT NULL")
+  end
+  def user_profile
+    @user = current_user
   end
 
 end

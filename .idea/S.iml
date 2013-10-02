@@ -42,11 +42,14 @@
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.2.2, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="eventmachine (v1.0.3, RVM: ruby-1.9.3-p429) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="excon (v0.13.4, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v1.4.0, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="factory_girl (v4.2.0, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="factory_girl_rails (v4.2.1, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="faker (v1.1.2, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ffi (v1.6.0, RVM: ruby-1.9.3-p429) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="fog (v1.3.1, RVM: ruby-1.9.3-p429) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="formatador (v0.2.4, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hike (v1.2.1, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="hirb (v0.7.1, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.6.4, RVM: ruby-1.9.3-p429) [gem]" level="application" />
@@ -59,6 +62,8 @@
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.4.4, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.22, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.7.2, RVM: ruby-1.9.3-p429) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-scp (v1.0.4, RVM: ruby-1.9.3-p429) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="net-ssh (v2.7.0, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.5.9, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.0.6, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v0.15.1, RVM: ruby-1.9.3-p429) [gem]" level="application" />
@@ -75,6 +80,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v2.13.0@b3899f, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-mocks (v2.13.0, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-rails (v2.13.0@ee8810, RVM: ruby-1.9.3-p429) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="ruby-hmac (v0.4.0, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v0.9.9, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.2.7, RVM: ruby-1.9.3-p429) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v3.2.6, RVM: ruby-1.9.3-p429) [gem]" level="application" />
