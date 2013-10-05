@@ -81,7 +81,7 @@
                 <li><%= link_to 'Notifications', notifications_home_index_path %> | </li>
                 <li><%#= link_to 'Contact Us', location_home_index_path %>  </li>
              <% if user_signed_in? %>
-                <li>  Hi <%= link_to current_user.name,user_profile_home_index_path %>--
+                <li>  Hi <span class="profile_name"><%= link_to current_user.name,user_profile_home_index_path %> </span> -
               <%= link_to "Logout",destroy_user_session_path, :method => :delete %></li>
              <% end %>
              <% if !user_signed_in?%>

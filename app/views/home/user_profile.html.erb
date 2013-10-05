@@ -7,7 +7,7 @@
     <b>Gender&nbsp;:&nbsp;</b><%= @user.gender== true ? "Male" : "Female" %>   <br/>
     <b>Date Of Birth&nbsp;:&nbsp;</b><%= @user.born%>   <br/>
     <b>Phone&nbsp;:&nbsp;</b><%= @user.phone%>   <br/>
-    <b>Branch&nbsp;:&nbsp;</b><%= @user.branch.name %>-<%= @user.branch.course.name %>   <br/>
+    <b>Branch&nbsp;:&nbsp;</b><% if @user.branch %><%= @user.branch.name %>-<%= @user.branch.course.name %><% end%>   <br/>
     <b>Qualification&nbsp;:&nbsp;</b><%= @user.pursuing%>   <br/>
     <b>College&nbsp;:&nbsp;</b><%= @user.college%>   <br/>
     <b>Gate Rank&nbsp;:&nbsp;</b><%= @user.gate_rank%>   <br/>
