@@ -182,7 +182,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e72d2', end
 }
 .middle_desc_left {
 	float:left;
-
+    width:68%;
     margin: 0px;
 }
 .middle_desc_left h2, .middle_desc_full h2 {
@@ -462,7 +462,28 @@ li.onlineexam span {
   margin-top: -15px !important;
 }
 .profile_name{
-  background-color: #666666;
-  border: 1px solid #eee;
+  /*background-color: #666666;
+  border: 1px solid #eee;*/
   padding:1px;
+}
+.notification_form input[type="text"]{
+  width: 700px;
+}
+.notification_form textarea{
+  height: 100px;
+  width: 700px;
+}
+.notification_user_link{
+  clear:both;
+  float:left;
+  width:98%;
+  padding-left:20px;
+  background: url("plus.PNG") no-repeat 0 5px;
+}
+.middle_desc_right{
+  float:right;
+  clear:right;
+  width:30%;
+  background: none repeat scroll 0 0 #DCDCDC;
+  min-height: 300px;
 }

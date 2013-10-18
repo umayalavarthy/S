@@ -1,5 +1,8 @@
 SaiMedha::Application.routes.draw do
 
+  resources :notifications
+
+
   resources :questions
 
 

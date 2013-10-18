@@ -8,7 +8,7 @@
   <dd><%= @question.question %></dd>
 
 <dt><strong><%= model_class.human_attribute_name(:question) %>:</strong></dt>
-  <dd><%= image_tag(@question.qavatar_url) if @question.qavatar? %></dd>
+  <dd>&nbsp;<%= image_tag(@question.qavatar_url) if @question.qavatar? %></dd>
 
   <dt><strong><%= model_class.human_attribute_name(:correct_answer) %>:</strong></dt>
   <dd><%= @question.correct_answer %></dd>

@@ -19,11 +19,13 @@
     <div class="main_wrapper">
   <div class="header_wrapper">
       <div class="logo_social">
+        <%= image_tag "sitelogo.jpg"%>
+        <!--
         <div class = "heading-uma">
           <div class="logo">
-                <%= image_tag "saimedha.jpg"%>
+                <%#= image_tag "saimedha.jpg"%>
             </div>
-            <%= image_tag "sgate1.jpg", :size=>'435x30'%>
+            <%#= image_tag "sgate1.jpg", :size=>'435x30'%>
 
 
           <div class="social_network">
@@ -32,7 +34,7 @@
                     <li><a href="#"><%= image_tag "in.jpg" %></a></li>
                 </ul>
             </div>
-        </div>
+        </div>-->
         </div>
         <div class="coaching_center">
           <div class="coaching_center_inner">
@@ -48,7 +50,7 @@
                     <%= image_tag 'practicetest.png', :size => "292x30"%>
                   <% end %>
                   </li>
-              </ul>                ,
+              </ul>
 
           </div>
         </div>
@@ -78,7 +80,7 @@
                 <li><%= link_to 'Syllabus', materials_home_index_path %> | </li>
 
                 <li><%= link_to 'Facilities', features_home_index_path %> |</li>
-                <li><%= link_to 'Notifications', notifications_home_index_path %> | </li>
+                <li><%= link_to 'Notifications', notifications_path %> | </li>
                 <li><%#= link_to 'Contact Us', location_home_index_path %>  </li>
              <% if user_signed_in? %>
                 <li>  Hi <span class="profile_name"><%= link_to current_user.name,user_profile_home_index_path %> </span> -
@@ -87,24 +89,25 @@
              <% if !user_signed_in?%>
                 <li><%= link_to "Sign Up/Sign In", '/users/sign_in' %></li>
               <% end %>
-
-            <% if !user_signed_in? && params[:controller] == "home" && params[:action] == "index" %>
+           <!--
+            <%# if !user_signed_in? && params[:controller] == "home" && params[:action] == "index" %>
             <div id="dialog" title="SaiMedha">
-              <p class="notice"><%= notice %></p>
+              <p class="notice"><%#= notice %></p>
               <h1>Welcome to SAI MEDHA</h1>   <br/>
-              <%= image_tag "sgate.jpg", :size=>'600x30'%>   <br/> <br/>
+              <%#= image_tag "sgate.jpg", :size=>'600x30'%>   <br/> <br/>
               <h3>We are coming to your college to give you more information</h3>
               <br/>
               <p>Mean while register with us.</p>  <br/>
               <p class = "highlight">We offer free online tests for registered students ..</p>
-              <%= image_tag "practicetest.png"%>
+              <%#= image_tag "practicetest.png"%>
               <br/>
               <br/>
 
-              <%= link_to "SIGN UP", '/users/sign_up' %>
-              <%= link_to "SIGN IN", '/users/sign_in' %>
+              <%#= link_to "SIGN UP", '/users/sign_up' %>
+              <%#= link_to "SIGN IN", '/users/sign_in' %>
             </div>
-            <% end %>
+            <%# end %>
+            -->
             <% if (user_signed_in? && current_user.phone.to_s.length != 10 && params[:controller] == "home" && params[:action] == "index")||(@profile) %>
                 <div id="dialog" title="Student Form">
                   <p class="notice"><%= notice %></p>
