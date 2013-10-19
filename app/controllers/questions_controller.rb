@@ -3,8 +3,12 @@ class QuestionsController < ApplicationController
   # GET /questions.json
   before_filter :hacker_admin_auth
   def index
-    @questions = Question.all
-
+    @exams=Exam.all
+    if params[:exam]
+      @questions = Exam.find(params[:exam]).questions
+    else
+      @questions = Question.all
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @questions }

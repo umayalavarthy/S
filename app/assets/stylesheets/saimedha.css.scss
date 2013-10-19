@@ -7,7 +7,20 @@
   font-family: CurlzMTRegular;
   src: url(fonts/CurlzMTRegular.eot);
 }*/
-
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  49% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -182,7 +195,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e72d2', end
 }
 .middle_desc_left {
 	float:left;
-
+    width:68%;
     margin: 0px;
 }
 .middle_desc_left h2, .middle_desc_full h2 {
@@ -344,7 +357,7 @@ padding:20px;
   width:98%;
   padding-left:20px;
   padding-bottom:20px;
-  background: url("plus.PNG") no-repeat;
+  background: url("plus.PNG") no-repeat 0 3px;
 }
 .acc_container a:hover{
   color: #000000;
@@ -462,7 +475,56 @@ li.onlineexam span {
   margin-top: -15px !important;
 }
 .profile_name{
-  background-color: #666666;
-  border: 1px solid #eee;
+  /*background-color: #666666;
+  border: 1px solid #eee;*/
   padding:1px;
 }
+.notification_form input[type="text"]{
+  width: 700px;
+}
+.notification_form textarea{
+  height: 100px;
+  width: 700px;
+}
+.notification_user_link{
+  clear:both;
+  float:left;
+  width:98%;
+  padding-left:20px;
+  background: url("plus.PNG") no-repeat 0 5px;
+}
+.middle_desc_right{
+  float:right;
+  clear:right;
+  width:30%;
+  background: none repeat scroll 0 0 #DCDCDC;
+  min-height: 300px;
+}
+.main_right_nav{
+  padding:5px;
+  border: 5px solid #FFFFFF;
+  border-radius: 10px;
+}
+.right_link{
+  margin-bottom:5px;
+}
+.new_exam_qs{
+  clear:both;
+  float:left;
+  width:100%;
+  padding:5px;
+}
+
+li.onlineexam img{
+  animation: blink 1s;
+  animation-iteration-count: infinite;
+}
+.questions-head{
+  clear:both;
+  padding:10px;
+  background-color: green;
+  color:#fff;
+  margin-top:10px;
+
+}
+/* home slider*/

@@ -1,0 +1,11 @@
+<div class="main_right_nav">
+  <marquee bgcolor="#FFFFFF" onMouseOver="this.scrollAmount=0" onMouseOut="this.scrollAmount=2" scrollamount="2" direction="up" loop="true">
+
+    <% @notifications.each do |notification| %>
+        <span class="notification_user_link right_link">
+            <%= link_to notification.title, notification %>
+        </span>
+    <% end %>
+
+  </marquee>
+</div>

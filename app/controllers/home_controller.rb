@@ -1,5 +1,6 @@
 class HomeController < ApplicationController
   skip_before_filter :authenticate_user!
+  before_filter :list_notifications
   def index
       if params[:update_profile]
         @profile = true
@@ -69,6 +70,11 @@ class HomeController < ApplicationController
   end
   def user_profile
     @user = current_user
+  end
+
+  private
+  def list_notifications
+    @notifications = Notification.all
   end
 
 end

@@ -1,0 +1,53 @@
+
+<div class="middle_desc">
+
+  <div class="middle_desc_left">
+
+    <h2>New Notifications</h2><br/><br/>
+    <% if user_signed_in? %>
+        <% if current_user.user_type == 507 %>
+         <%= link_to 'Create New Notification', new_notification_path,:class=>"btn" %>
+        <% end %>
+    <% end %>
+    <table class="table table-striped">
+      <% if user_signed_in? %>
+          <% if current_user.user_type == 507 %>
+               <tr>
+                <th>Title</th>
+                <th>Description</th>
+                <th></th>
+                <th></th>
+               </tr>
+          <% end %>
+      <% end %>
+      <% @notifications.each do |notification| %>
+          <tr>
+            <td>
+                <span class="notification_user_link">
+                    <%= link_to notification.title, notification %>
+                </span>
+            </td>
+
+            <% if user_signed_in? %>
+                <% if current_user.user_type == 507 %>
+                    <td><%= link_to notification.title, notification %></td>
+                    <td><%= notification.description %></td>
+                    <td><%= link_to 'Edit', edit_notification_path(notification), :class=>"btn btn-mini"%></td>
+                    <td><%= link_to 'Destroy', notification, method: :delete, data: { confirm: 'Are you sure?' },:class=>"btn btn-mini btn-danger" %></td>
+                <% end %>
+            <% end %>
+          </tr>
+      <% end %>
+    </table>
+  </div>
+    <div class="middle_desc_right">
+      <%= render :partial => "layouts/right_pane" %>
+    </div>
+
+  </div>
+  <div class="AchiversDetails">
+    <marquee>
+      <%= image_tag "acheivers.jpg", :size=>"1200x100" %>
+    </marquee>
+  </div>
+
