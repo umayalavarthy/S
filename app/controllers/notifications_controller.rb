@@ -17,7 +17,7 @@ class NotificationsController < ApplicationController
   # GET /notifications/1.json
   def show
     @notification = Notification.find(params[:id])
-
+    @notifications = Notification.all
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @notification }

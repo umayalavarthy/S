@@ -1,7 +1,23 @@
 <%- model_class = Question -%>
+<%= link_to "Create New Question",new_question_path,:class => 'btn' %>
+
 <div class="page-header-mine">
-  <h3><%=t '.title', :default => model_class.model_name.human.pluralize %></h3>
+  <h3>Click on Exam name to see questions of it. </h3>
 </div>
+<% if  @exams %>
+    <% @exams.each do |exam|%>
+       <div class="new_exam_qs">
+        <%= link_to exam.name, questions_path(:exam=> exam.id) %>
+       </div>
+    <% end %>
+
+<% end %>
+
+<% if params[:exam]%>
+    <br/>
+    <div class="page-header-mine">
+      <h3 class="questions-head">Questions of <%= Exam.find(params[:exam]).name %></h3>
+    </div>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -40,7 +56,5 @@
     <% end %>
   </tbody>
 </table>
+<% end %>
 
-<%= link_to t('.new', :default => t("helpers.links.new")),
-            new_question_path,
-            :class => 'btn btn-primary' %>
