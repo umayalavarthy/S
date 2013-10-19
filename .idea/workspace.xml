@@ -2,25 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/onlineexam.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_right_pane.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/_right_pane.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/exams/index.html.erb" afterPath="$PROJECT_DIR$/app/views/exams/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/notifications/index.html.erb" afterPath="$PROJECT_DIR$/app/views/notifications/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/questions/index.html.erb" afterPath="$PROJECT_DIR$/app/views/questions/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/notifications_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/notifications_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/questions_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/questions_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/sitelogo.jpg" afterPath="$PROJECT_DIR$/app/assets/images/sitelogo.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/saimedha.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/saimedha.css.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/notifications/show.html.erb" afterPath="$PROJECT_DIR$/app/views/notifications/show.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/questions/show.html.erb" afterPath="$PROJECT_DIR$/app/views/questions/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="S.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1382181017852" ignored="false" />
+    <file path="/Dummy.txt" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1382185029732" ignored="false" />
     <file path="/notifications.html.erb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1380690459039" ignored="false" />
-    <file path="/saimedha.css.scss" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1382181803159" ignored="false" />
+    <file path="/saimedha.css.scss" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1382185667505" ignored="false" />
     <file path="/application.html.erb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1382179172780" ignored="false" />
     <file path="/aboutus.html.erb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1382089876984" ignored="false" />
     <file path="/features.html.erb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1382089906809" ignored="false" />
@@ -50,7 +42,7 @@
     <file path="/abouties.html.erb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1382074402978" ignored="false" />
     <file path="/application_controller.rb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1378664858550" ignored="false" />
     <file path="/users_controller.rb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1378665812703" ignored="false" />
-    <file path="/index.html.erb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1382182078140" ignored="false" />
+    <file path="/index.html.erb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1382184924227" ignored="false" />
     <file path="/allusers.html.erb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1382074484108" ignored="false" />
     <file path="/20130910174201_add_cols_to_users.rb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1378835280663" ignored="false" />
     <file path="/20130914172753_add_duration_to_exam.rb" changelist="b7ccfa23-f2f6-48a6-a38e-da6f5f1f863b" time="1379179709037" ignored="false" />
@@ -85,19 +77,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <file leaf-file-name="saimedha.css.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/saimedha.css.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="1" selection-start="910" selection-end="910" vertical-scroll-proportion="0.30664396">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="47" selection-start="2348" selection-end="2348" vertical-scroll-proportion="-0.625">
+            <state line="517" column="17" selection-start="9070" selection-end="9070" vertical-scroll-proportion="0.551495">
               <folding />
             </state>
           </provider>
@@ -106,7 +89,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/questions/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="17" selection-start="467" selection-end="481" vertical-scroll-proportion="-11.25">
+            <state line="18" column="17" selection-start="467" selection-end="481" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
@@ -130,7 +113,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/home/programmes_offered.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/user_profile.html.erb" />
         <option value="$PROJECT_DIR$/app/views/home/materials.html.erb" />
         <option value="$PROJECT_DIR$/app/views/devise/mailer/confirmation_instructions.html.erb" />
@@ -139,21 +121,22 @@
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/notifications_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/_right_pane.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/views/questions/show.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/questions_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/questions/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/saimedha.css.scss" />
         <option value="$PROJECT_DIR$/app/views/exams/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/saimedha.css.scss" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="52" />
+    <option name="y" value="24" />
     <option name="width" value="1301" />
-    <option name="height" value="716" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -182,6 +165,7 @@
     </navigator>
     <panes>
       <pane id="RailsProjectView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -236,7 +220,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="exams" />
+              <option name="myItemId" value="home" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -268,13 +252,56 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="stylesheets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="S" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="S" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="S" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="S" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -578,14 +605,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="52" width="1301" height="716" extended-state="7" />
+    <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32919255" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30055955" sideWeight="0.6708075" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3117506" sideWeight="0.6708075" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -662,67 +689,9 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/notifications/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="22" selection-start="620" selection-end="861" vertical-scroll-proportion="0.11067194" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="41" selection-start="1682" selection-end="1716" vertical-scroll-proportion="0.73544973">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="27" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.5660377" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/notifications_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="37" selection-start="476" selection-end="476" vertical-scroll-proportion="0.027075812" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/features.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="2" selection-start="2123" selection-end="2214" vertical-scroll-proportion="0.72924185" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/allusers.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="35" selection-start="793" selection-end="793" vertical-scroll-proportion="0.67509025" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/aboutus.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="24" selection-start="1780" selection-end="1780" vertical-scroll-proportion="0.8375451" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/_right_pane.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="27" selection-start="56" selection-end="56" vertical-scroll-proportion="0.027075812" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="47" selection-start="2348" selection-end="2348" vertical-scroll-proportion="-0.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/questions/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="17" selection-start="467" selection-end="481" vertical-scroll-proportion="-11.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/saimedha.css.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="526" column="18" selection-start="9238" selection-end="9238" vertical-scroll-proportion="0.9480969">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/questions_controller.rb">
@@ -734,28 +703,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/exams/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="56" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.8104693">
-          <folding />
-        </state>
+        <state line="31" column="56" selection-start="1123" selection-end="1123" vertical-scroll-proportion="0.8104693" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/exams_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/questions/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="34" selection-start="281" selection-end="281" vertical-scroll-proportion="0.11764706">
+        <state line="7" column="34" selection-start="281" selection-end="281" vertical-scroll-proportion="0.11764706" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/questions/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="17" selection-start="467" selection-end="481" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/site-background.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/saimedha_coverpage.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/coverpage2.JPG">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/sitelogo.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="4" selection-start="32" selection-end="32" vertical-scroll-proportion="0.054151624">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="217" column="34" selection-start="10167" selection-end="10167" vertical-scroll-proportion="0.027075812">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="1" selection-start="910" selection-end="910" vertical-scroll-proportion="0.30664396">
+        <state line="29" column="0" selection-start="911" selection-end="911" vertical-scroll-proportion="0.32994923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/saimedhaposter.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/images/saimedhabook2.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/saimedha.css.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="517" column="17" selection-start="9070" selection-end="9070" vertical-scroll-proportion="0.551495">
           <folding />
         </state>
       </provider>
