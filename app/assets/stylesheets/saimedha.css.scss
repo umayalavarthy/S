@@ -378,6 +378,7 @@ padding:20px;
 }
 .right-pane-pop{
   float:right;
+  width:60%;
 }
 .right-pane-pop .form-horizontal .control-label{
 
@@ -528,5 +529,10 @@ li.onlineexam img{
   color:#fff;
   margin-top:10px;
 
+}
+#dialoga p.valid_note {
+  float: right;
+  margin: 30px;
+  width: 60%;
 }
 /* home slider*/

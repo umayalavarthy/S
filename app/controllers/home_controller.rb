@@ -37,27 +37,27 @@ class HomeController < ApplicationController
 
   def create_user_details
     @user = current_user
-    redirect_to root_path;
-  end
-  def create
-    @user = current_user
-    @user.name=params["/home/create_user_details"]["name"]
-    @user.phone = params["/home/create_user_details"]["phone"]
-    @user.college =  params["/home/create_user_details"]["college"]
-    @user.gender =  params["/home/create_user_details"]["gender"]
-    @user.born =  Date.new(params["/home/create_user_details"]["born(1i)"].to_i,
-                           params["/home/create_user_details"]["born(2i)"].to_i,
-                           params["/home/create_user_details"]["born(3i)"].to_i)
-    @user.gate_rank = params["/home/create_user_details"]["gate_rank"]
-    @user.ies_rank = params["/home/create_user_details"]["ies_rank"]
-    @user.pursuing = params["/home/create_user_details"]["pursuing"]
-    @user.branch_id = params[:branch_id]
-    if params[:branch_id].to_i != 0
-      @user.course_id = Branch.find(params[:branch_id]).course_id
+    if params["/home/create_user_details"]
+      @user.name=params["/home/create_user_details"]["name"]
+      @user.phone = params["/home/create_user_details"]["phone"]
+      @user.college =  params["/home/create_user_details"]["college"]
+      @user.gender =  params["/home/create_user_details"]["gender"]
+      @user.born =  Date.new(params["/home/create_user_details"]["born(1i)"].to_i,
+                             params["/home/create_user_details"]["born(2i)"].to_i,
+                             params["/home/create_user_details"]["born(3i)"].to_i)
+      @user.gate_rank = params["/home/create_user_details"]["gate_rank"]
+      @user.ies_rank = params["/home/create_user_details"]["ies_rank"]
+      @user.pursuing = params["/home/create_user_details"]["pursuing"]
+      @user.branch_id = params[:branch_id]
+      if params[:branch_id].to_i != 0
+        @user.course_id = Branch.find(params[:branch_id]).course_id
+      end
+      @user.save
+      redirect_to user_profile_home_index_path
     end
-    @user.save
-    redirect_to :back;
   end
+
+
 
   def gallery
 
