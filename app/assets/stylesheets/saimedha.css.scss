@@ -25,9 +25,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+	font-size: 16px;
+  /*font: inherit; */
+  font-family: sans-serif;
+  vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -110,7 +111,7 @@ table {
 }
 .coaching_center_inner li {
 	float:left;
-	margin-right:10px;
+	margin-right:12px;
 }
 .coaching_center_inner li a {
 	float:left;
@@ -369,6 +370,7 @@ padding:20px;
 .block ul li {
   list-style-type: square;
   padding:5px !important;
+  clear:both;
 }
 .left-pane-pop{
   float:left;
@@ -376,6 +378,7 @@ padding:20px;
 }
 .right-pane-pop{
   float:right;
+  width:60%;
 }
 .right-pane-pop .form-horizontal .control-label{
 
@@ -526,5 +529,10 @@ li.onlineexam img{
   color:#fff;
   margin-top:10px;
 
+}
+#dialoga p.valid_note {
+  float: right;
+  margin: 30px;
+  width: 60%;
 }
 /* home slider*/

@@ -1,0 +1,87 @@
+
+<div id="dialoga" title="Student Form">
+
+
+  <p class="valid_note">Fields marked with (**) need to be filled.</p>
+  <div class="left-pane-pop">
+    <%= image_tag "rocket.jpg", :size=>'350x30'%>
+  </div>
+  <div class="right-pane-pop">
+    <%= form_for create_user_details_home_index_path, :html => { :class => 'form-horizontal', :method=>:get  } do |f| %>
+        <div class="control-group">
+          <span class = 'control-label' >Full Name **</span>
+          <div class="controls">
+            <%= f.text_field :name, :class => 'text_field' %>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <%= f.label :gender, :class => 'control-label' %> **
+          <div class="controls" id="gender-div">
+            <%= f.select :gender, options_for_select([['I Am'],['Male', '1'], ['Female', '0']]), :class => 'text_field' %>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <span class = 'control-label' >Date of Birth **</span>
+          <div class="controls">
+            <%= f.date_select :born,:start_year=>1970,:end_year=>2015, :class => 'text_field' %>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <%= f.label :phone, :class => 'control-label' %>**
+          <div class="controls">
+            <%= f.text_field :phone, :class => 'text_field' %>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <span>Area of Intrest **</span>
+          <div class="controls">
+            <select name="branch_id" class="selectbranch">
+              <option value="">Select Branch</option>
+              <% Branch.all.each do |author| %>
+                  <option value="<%= author.id %>"><%=  author.course.name %> - <%= author.name %></option>
+              <% end %>
+            </select>
+          </div>
+        </div>
+
+
+        <div class="control-group">
+          <%= f.label :college, :class => 'control-label' %>**
+          <div class="controls">
+            <%= f.text_field :college,:placeholder => "Eg: SVIT, Secunderabad", :class => 'text_field' %>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <span class = 'control-label' >Study(Pursuing/Completed)</span>
+          <div class="controls">
+            <%= f.text_field :pursuing,:placeholder => "Eg: Btech, CSE 3rd year ", :class => 'text_field' %>
+          </div>
+        </div>
+
+        <div class="control-group">
+          <span class = 'control-label'>Gate Rank(If attended)</span>
+          <div class="controls">
+            <%= f.text_field :gate_rank,:placeholder => "Rank - Roll No", :class => 'text_field' %>
+          </div>
+        </div>
+        <div class="control-group">
+          <span class = 'control-label'>IES Rank(If attended)</span>
+          <div class="controls">
+            <%= f.text_field :ies_rank,:placeholder => "Rank - Roll No", :class => 'text_field' %>
+          </div>
+        </div>
+
+        <div class="form-actions" id="sformsubmit">
+          <%= f.submit "Save", :class => 'btn btn-primary' %>
+          <%= link_to "Cancel", root_path, :class => "btn" %>
+        </div>
+
+    <% end %>
+  </div>
+</div>
+

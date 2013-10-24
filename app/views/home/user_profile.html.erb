@@ -13,7 +13,7 @@
     <b>Gate Rank&nbsp;:&nbsp;</b><%= @user.gate_rank%>   <br/>
     <b>IES Rank&nbsp;:&nbsp;</b><%= @user.ies_rank%>   <br/><br/><br/>
 
-    <%= link_to "Edit Profile", home_index_path(:update_profile=>1),:class => 'btn btn-primary'%>
+    <%= link_to "Edit Profile", create_user_details_home_index_path,:class => 'btn btn-primary'%>
 
     <br/><br/>
   </div>
