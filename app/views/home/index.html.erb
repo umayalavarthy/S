@@ -1,6 +1,14 @@
 <div class="Banner_slide">
-
-  <%=image_tag "banner1.jpg" %>
+  <div id="sliderFrame">
+    <div id="slider">
+      <%=image_tag "banner1.jpg"  %>
+      <%=image_tag "banner2.jpg", :size => "1024x270"  %>
+      <%=image_tag "banner3.jpg" %>
+      <%#=image_tag "image-slider-4.jpg" %>
+      <%#=image_tag "image-slider-5.jpg"%>
+    </div>
+  </div>
+  <%#=image_tag "banner1.jpg" %>
 </div>
 <div class="middle_desc">
 
@@ -21,14 +29,3 @@
       <%= image_tag "acheivers.jpg", :size=>"1200x100" %>
     </marquee>
   </div>
-
-
-
-<!-- Include the jQuery library (local or CDN) -->
-<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-<!-- Include the plugin *after* the jQuery library -->
-<script src="bjqs.min.js"></script>
-
-<!-- Include the basic styles -->
-<link type="text/css" rel="Stylesheet" href="bjqs.css" />
