@@ -35,6 +35,7 @@ end
 
 gem 'thin'
 
+  gem 'twitter-bootstrap-rails'
 
 gem 'less-rails'
 gem 'jquery-rails'
@@ -53,9 +54,7 @@ gem "fog", "~> 1.3.1"
 
 # To use debugger
 # gem 'debugger'
-group :assets do
-  gem 'twitter-bootstrap-rails'
-end
+
 group :test, :development do
   #TODO point this back to default gem once bug is gone - https://github.com/rspec/rspec-expectations/commit/f4efada6c86b840802a18e3de12ea68279f9030f
   gem "rspec-rails", :git => "https://github.com/rspec/rspec-rails.git"

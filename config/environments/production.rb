@@ -63,16 +63,17 @@ SaiMedha::Application.configure do
 
   CarrierWave.configure do |config|
     config.fog_credentials = {
-        :provider => 'AWS', # required
-        :aws_access_key_id => 'AKIAIESK63YJCFOTRLOA',
-        :aws_secret_access_key => 'qTaNnNsukDzbgRyUBkEo3oLVb0uytMNw61OrBpyw',
-        :region => 'eu-west-1', # optional, defaults to 'us-east-1'
-        :host => 's3.example.com', # optional, defaults to nil
-        :endpoint => 'https://s3.example.com:8080' # optional, defaults to nil
+        :provider               => 'AWS',                        # required
+        :aws_access_key_id      => 'AKIAIESK63YJCFOTRLOA',
+        :aws_secret_access_key  => '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',
+        # :region                 => 'us-east-1',                  # optional, defaults to 'us-east-1'
+        # :host                   => 's3.example.com',             # optional, defaults to nil
+        # :endpoint               => 'https://s3.example.com:8080' # optional, defaults to nil
     }
-    config.fog_directory = 'saimedha' # required
-    config.fog_public = false # optional, defaults to true
-    config.fog_attributes = {'Cache-Control'=>'max-age=315576000'} # optional, defaults to {}
+    config.fog_directory  = 'saimedha'                              # required
+    config.fog_public     = false                                   # optional, defaults to true
+    config.fog_attributes = {'Cache-Control'=>'max-age=315576000'}  # optional, defaults to {}
+
   end
 
 end
