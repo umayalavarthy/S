@@ -18,8 +18,10 @@
   <dd><%= @question.incorrect_answer_2 %></dd>
   <dt><strong><%= model_class.human_attribute_name(:incorrect_answer_3) %>:</strong></dt>
   <dd><%= @question.incorrect_answer_3 %></dd>
-  <dt><strong><%= model_class.human_attribute_name(:exam_id) %>:</strong></dt>
-  <dd><%= @question.exam.name %></dd>
+  <dt><strong>Exams:</strong></dt>
+  <dd><% @question.exams.each do |e| %>
+        <%= e.name %> <br/>
+        <% end %></dd>
 </dl>
 
 <div class="form-actions">

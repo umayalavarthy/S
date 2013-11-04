@@ -41,7 +41,7 @@
         <td><%#= question.incorrect_answer_1 %></td>
         <td><%#= question.incorrect_answer_2 %></td>
         <td><%#= question.incorrect_answer_3 %></td>
-        <td><%= question.exam.name %></td>
+        <td><%= Exam.find(params[:exam]).name %></td>
         
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),

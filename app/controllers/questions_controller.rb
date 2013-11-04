@@ -46,9 +46,22 @@ class QuestionsController < ApplicationController
   # POST /questions.json
   def create
     @question = Question.new(params[:question])
-
+    exam_ids = [params[:exam_id1],params[:exam_id2],params[:exam_id3],params[:exam_id4]]
+    exams = exam_ids.reject(&:empty?)
     respond_to do |format|
-      if @question.save
+
+      if exams.length > 0
+        if @question.save
+          exams.each do |ex|
+            @exam_question = ExamsQuestion.new
+            @exam_question.exam_id = ex
+            @exam_question.question_id = @question.id
+            @exam_question.save
+          end
+        else
+          format.html { render action: "new" }
+          format.json { render json: @question.errors, status: :unprocessable_entity }
+        end
         format.html { redirect_to @question, notice: 'Question was successfully created.' }
         format.json { render json: @question, status: :created, location: @question }
       else
@@ -62,14 +75,28 @@ class QuestionsController < ApplicationController
   # PUT /questions/1.json
   def update
     @question = Question.find(params[:id])
-
+    exam_ids = [params[:exam_id1],params[:exam_id2],params[:exam_id3],params[:exam_id4]]
+    exams = exam_ids.reject(&:empty?)
     respond_to do |format|
-      if @question.update_attributes(params[:question])
-        format.html { redirect_to @question, notice: 'Question was successfully updated.' }
-        format.json { head :no_content }
+      if exams.length > 0
+        if @question.update_attributes(params[:question])
+          ExamsQuestion.find_all_by_question_id(@question.id).each do |eq|
+            eq.delete
+          end
+          exams.each do |ex|
+            @exam_question = ExamsQuestion.new
+            @exam_question.exam_id = ex
+            @exam_question.question_id = @question.id
+            @exam_question.save
+          end
+          format.html { redirect_to @question, notice: 'Question was successfully updated.' }
+          format.json { head :no_content }
+        else
+          format.html { render action: "edit" }
+          format.json { render json: @question.errors, status: :unprocessable_entity }
+        end
       else
-        format.html { render action: "edit" }
-        format.json { render json: @question.errors, status: :unprocessable_entity }
+         redirect_to edit_question_path(@question)
       end
     end
   end

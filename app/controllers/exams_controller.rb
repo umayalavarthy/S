@@ -65,10 +65,14 @@ class ExamsController < ApplicationController
   # PUT /exams/1.json
   def update
     @exam = Exam.find(params[:id])
-
+    @oldexam = Exam.find(params[:id])
     respond_to do |format|
       if @exam.update_attributes(params[:exam])
-        @exam.branch_id = params[:branch_id]
+        if params[:branch_id]==""
+          @exam.branch_id = @oldexam.branch_id
+        else
+          @exam.branch_id = params[:branch_id]
+        end
         @exam.save
         format.html { redirect_to @exam, notice: 'Exam was successfully updated.' }
         format.json { head :no_content }

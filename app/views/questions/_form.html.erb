@@ -38,12 +38,29 @@
     </div>
   </div>
   <div class="control-group">
-    <%= f.label :exam_id, :class => 'control-label' %>
+    <span class = 'control-label'>Select Exam</span>
     <div class="controls">
-      <%= f.select :exam_id, Exam.order('name ASC').map {|e| [e.name, e.id]}, :class => 'number_field' %>
+      <%= select_tag :exam_id1, options_for_select(Exam.order('name ASC').map {|e| [e.name, e.id]}), :prompt=> "Select Exam 1", :class => 'number_field' %>
     </div>
   </div>
-
+    <div class="control-group">
+      <span class = 'control-label'>Select Exam</span>
+      <div class="controls">
+        <%= select_tag :exam_id2, options_for_select(Exam.order('name ASC').map {|e| [e.name, e.id]}), :prompt=> "Select Exam 2", :class => 'number_field' %>
+      </div>
+    </div>
+    <div class="control-group">
+      <span class = 'control-label'>Select Exam</span>
+      <div class="controls">
+        <%= select_tag :exam_id3, options_for_select(Exam.order('name ASC').map {|e| [e.name, e.id]}), :prompt=> "Select Exam 3", :class => 'number_field' %>
+      </div>
+    </div>
+    <div class="control-group">
+      <span class = 'control-label'>Select Exam</span>
+      <div class="controls">
+        <%= select_tag :exam_id4, options_for_select(Exam.order('name ASC').map {|e| [e.name, e.id]}), :prompt=> "Select Exam 4", :class => 'number_field' %>
+      </div>
+    </div>
   <div class="form-actions">
     <%= f.submit nil, :class => 'btn btn-primary' %>
     <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
