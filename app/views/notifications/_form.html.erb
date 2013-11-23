@@ -20,6 +20,18 @@
             <%= f.label :description %><br />
             <%= f.text_area :description %>
           </div>
+           <div class="field">
+             <%= f.label :link1 %><br />
+             <%= f.text_field :link1 %>
+           </div>
+           <div class="field">
+             <%= f.label :link2 %><br />
+             <%= f.text_field :link2 %>
+           </div>
+           <div class="field">
+             <label>Day to day Shedule:</label> <br />
+             <%= f.check_box :day_to_day %>  Yes
+           </div>
           <div class="actions">
             <%= f.submit :class=>"btn" %>
           </div>

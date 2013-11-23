@@ -74,7 +74,8 @@ class HomeController < ApplicationController
 
   private
   def list_notifications
-    @notifications = Notification.all
+    @day_notifications = Notification.find_all_by_day_to_day(true)
+    @long_notifications =  Notification.find_all_by_day_to_day(nil)+Notification.find_all_by_day_to_day(false)
   end
 
 end

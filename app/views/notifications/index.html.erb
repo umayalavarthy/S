@@ -15,23 +15,34 @@
                <tr>
                 <th>Title</th>
                 <th>Description</th>
-                <th></th>
-                <th></th>
+                <th> Day to day schedule </th>
+                <th>&nbsp;</th>
+                <th>&nbsp;</th>
                </tr>
           <% end %>
       <% end %>
       <% @notifications.each do |notification| %>
           <tr>
-            <td>
-                <span class="notification_user_link">
-                    <%= link_to notification.title, notification %>
-                </span>
-            </td>
-
+            <% if user_signed_in? %>
+                <% if current_user.user_type != 507 %>
+                    <td>
+                        <span class="notification_user_link">
+                            <%= link_to notification.title, notification %>
+                        </span>
+                    </td>
+                <% end %>
+            <% else %>
+                <td>
+                    <span class="notification_user_link">
+                        <%= link_to notification.title, notification %>
+                    </span>
+                </td>
+            <% end %>
             <% if user_signed_in? %>
                 <% if current_user.user_type == 507 %>
                     <td><%= link_to notification.title, notification %></td>
                     <td><%= notification.description %></td>
+                    <td><% if notification.day_to_day == true %>Yes<% else %>No <% end %></td>
                     <td><%= link_to 'Edit', edit_notification_path(notification), :class=>"btn btn-mini"%></td>
                     <td><%= link_to 'Destroy', notification, method: :delete, data: { confirm: 'Are you sure?' },:class=>"btn btn-mini btn-danger" %></td>
                 <% end %>

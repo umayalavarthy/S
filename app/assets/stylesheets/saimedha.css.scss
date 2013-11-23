@@ -498,13 +498,13 @@ li.onlineexam span {
   float:right;
   clear:right;
   width:30%;
-  background: none repeat scroll 0 0 #DCDCDC;
+  background: none repeat scroll 0 0 #09599E;
   min-height: 300px;
 }
 .main_right_nav{
-  padding:5px;
+  /*padding:5px;
   border: 5px solid #FFFFFF;
-  border-radius: 10px;
+  border-radius: 10px;  */
 }
 .right_link{
   margin-bottom:5px;
@@ -544,3 +544,11 @@ li.onlineexam img {
   width: 60%;
 }
 /* home slider*/
+.notify_links, .backbutton{
+  clear:both;
+  float: left;
+  margin: 10px 0;
+}
+.notify_links a {clear:both;margin:3px 0;float:left;}
+.notifications_sec { clear: both; margin:3px; background-color: #09599E;color:#FFFFFF;}
+.notifications_sec h5 {line-height:30px; height:30px;}

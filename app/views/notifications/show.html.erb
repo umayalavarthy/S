@@ -1,24 +1,27 @@
 
 <div class="middle_desc">
-
     <div class="middle_desc_left">
-        <h2>
-
-          <%= @notification.title %>
-        </h2>
-
-        <p>
-
-          <%= @notification.description %>
-        </p>
+        <h2><%= @notification.title %></h2>
+        <p><%= @notification.description %></p>
+      <div class="notify_links">
+        <% if @notification.link1 || @notification.link2 %>
+            <h3>Refer these links:</h3>
+            <% if @notification.link1 %> <a href="<%= @notification.link1%>" target=_blank > <%= @notification.title %>&nbsp; link 1</a> <% end %>
+            <% if @notification.link2 %> <a href="<%= @notification.link2%>" target=_blank> <%= @notification.title %>&nbsp; link 2</a>  <% end %>
+        <% end %>
+      </div>
+      <div class="notify_links">
+        <H3>Day to day schedule:</H3> <% if @notification.day_to_day == true %>Yes<% else %>No <% end %>
+      </div>
 
         <% if user_signed_in? %>
             <% if current_user.user_type == 507 %>
-                <%= link_to 'Edit', edit_notification_path(@notification), :class=>"btn" %> |
+                <%= link_to 'Edit', edit_notification_path(@notification), :class=>"btn backbutton" %>
 
             <% end %>
         <% end %>
-        <%= link_to 'Back', notifications_path, :class=>"btn" %>
+
+        <%= link_to 'Back', notifications_path, :class=>"btn backbutton" %>
     </div>
   <div class="middle_desc_right">
     <%= render :partial => "layouts/right_pane" %>
