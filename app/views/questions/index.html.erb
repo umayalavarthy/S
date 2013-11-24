@@ -21,26 +21,19 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%#= model_class.human_attribute_name(:id) %></th>
+      <th>&nbsp;</th>
       <th><%= model_class.human_attribute_name(:question) %></th>
-      <th><%#= model_class.human_attribute_name(:correct_answer) %></th>
-      <th><%#= model_class.human_attribute_name(:incorrect_answer_1) %></th>
-      <th><%#= model_class.human_attribute_name(:incorrect_answer_2) %></th>
-      <th><%#= model_class.human_attribute_name(:incorrect_answer_3) %></th>
       <th><%= model_class.human_attribute_name(:exam_id) %></th>
       
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
   </thead>
   <tbody>
+  <% i = 1 %>
     <% @questions.each do |question| %>
       <tr>
-        <td><%#= link_to question.id, question_path(question) %></td>
+        <td><%= i %></td>
         <td><%= link_to question.question, question_path(question) %></td>
-        <td><%#= question.correct_answer %></td>
-        <td><%#= question.incorrect_answer_1 %></td>
-        <td><%#= question.incorrect_answer_2 %></td>
-        <td><%#= question.incorrect_answer_3 %></td>
         <td><%= Exam.find(params[:exam]).name %></td>
         
         <td>
@@ -53,6 +46,7 @@
                       :class => 'btn btn-mini btn-danger' %>
         </td>
       </tr>
+      <% i+=1 %>
     <% end %>
   </tbody>
 </table>

@@ -2,6 +2,7 @@
 <table class="table table-striped">
   <thead>
   <tr>
+  <th>&nbsp;</th>
   <th>Name</th>
   <th>Email</th>
   <th> Phone</th>
@@ -13,8 +14,10 @@
   </tr>
   </thead>
   <tbody>
+    <% i = 1 %>
     <% @users.each do |user|%>
           <tr>
+            <td><%= i %></td>
             <td><%= user.name %>  </td>
             <td><%= user.email %> </td>
             <td><%= user.phone %>  </td>
@@ -24,7 +27,7 @@
             <td><%= user.college %>  </td>
             <td><%= user.gate_rank %>  </td>
            </tr>
-
+      <% i+=1 %>
     <% end %>
     </tbody>
 

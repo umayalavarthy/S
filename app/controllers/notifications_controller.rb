@@ -6,6 +6,8 @@ class NotificationsController < ApplicationController
 
   def index
     @notifications = Notification.all
+    @day_notifications = Notification.find_all_by_day_to_day(true)
+    @long_notifications =  Notification.find_all_by_day_to_day(nil)+Notification.find_all_by_day_to_day(false)
 
     respond_to do |format|
       format.html # index.html.erb
