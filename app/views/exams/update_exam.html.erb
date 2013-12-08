@@ -2,8 +2,45 @@
 <div class="middle_desc">
 
   <div class="middle_desc_full">
-    <h2>Successfully submitted your Test.</h2>
+    <h2> Thanks for your intrest.Successfully submitted your Test.</h2>
 
 
 <br/>
  <h4>You answered <%= @total %>/<%= @qcount %> Questions correctly .</h4>
+    <br/>
+    <div class="noteexam">
+        Checkout your answers here and improve yourself. <br/>
+      Answers are highlighted.<br/>
+      This paper won't be available once you moved to another page
+
+    </div>
+
+
+    <% i = 1 %>   <ol>
+    <% @questions.each do |question|%>
+        <li>
+          <div class="question-inex">
+            <b style="border:1px solid green;">&nbsp;<%= i%>&nbsp;</b> <%= question.question %>   <br/>
+
+          </div>
+          <div class="answer-inex">
+            <%= image_tag(question.qavatar_url) if question.qavatar? %>
+            <div class="member">
+            <span class="correct_answer_act"> <%= question.correct_answer%> </span> <br/>
+            </div>
+            <div class="member">
+             <%= question.incorrect_answer_1%><br/>
+            </div>
+            <div class="member">
+              <%= question.incorrect_answer_2%><br/>
+            </div>
+            <div class="member">
+               <%= question.incorrect_answer_3%> <br/>
+            </div>
+          </div>
+        </li>
+
+        <% i += 1 %>
+    <% end %>   </ol>
+  </div>
+</div>

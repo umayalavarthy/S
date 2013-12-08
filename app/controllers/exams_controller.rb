@@ -102,6 +102,7 @@ class ExamsController < ApplicationController
   end
   def update_exam
     @exam = Exam.find(params[:id])
+    @questions = @exam.questions
     @qcount = @exam.questions.count
     arr = (1..@qcount).to_a
     @total =0

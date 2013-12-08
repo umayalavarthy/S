@@ -4,10 +4,10 @@
         <h2><%= @notification.title %></h2>
         <p><%= @notification.description %></p>
       <div class="notify_links">
-        <% if @notification.link1 || @notification.link2 %>
+        <% if (@notification.link1 && !@notification.link1.blank?)|| (@notification.link2 && !@notification.link2.blank?) %>
             <h3>Refer these links:</h3>
-            <% if @notification.link1 %> <a href="<%= @notification.link1%>" target=_blank > <%= @notification.title %>&nbsp; link 1</a> <% end %>
-            <% if @notification.link2 %> <a href="<%= @notification.link2%>" target=_blank> <%= @notification.title %>&nbsp; link 2</a>  <% end %>
+            <% if @notification.link1 && !@notification.link1.blank? %> <a href="<%= @notification.link1%>" target=_blank > <%= @notification.title %>&nbsp; link 1</a> <% end %>
+            <% if @notification.link2 && !@notification.link2.blank?  %> <a href="<%= @notification.link2%>" target=_blank> <%= @notification.title %>&nbsp; link 2</a>  <% end %>
         <% end %>
       </div>
       <div class="notify_links">
